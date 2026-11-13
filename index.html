@@ -1,0 +1,1487 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>8th Grade Science Unit 4 Study Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: orange spirit band with logo slot, gray-and-white study panels. Orange = applied force arrows and actions, gray = opposing force, charcoal = net force. */
+:root {
+  --bg: #f3f4f5;
+  --surface: #ffffff;
+  --ink: #22262a;
+  --muted: #59626b;
+  --line: #d5d9dd;
+  --force: #d8560c;
+  --react: #59626b;
+  --good: #1b7a4b;
+  --bad: #b3342d;
+  --obj: #e4e7ea;
+  --grid: #e9ecef;
+  --accent: #c24e0a;
+  --on-accent: #ffffff;
+  --good-bg: #e2f3ea;
+  --bad-bg: #fbe8e6;
+  --orange: #f26b1d;
+  --orange-soft: #fdeadd;
+  --band-ink: #1f2328;
+  --gray-dark: #3a4046;
+  --display: "Barlow Condensed", "Arial Narrow", "Trebuchet MS", sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #181b1e; --surface: #23272b; --ink: #eceef0; --muted: #a3acb5; --line: #384047;
+    --force: #ff9a55; --react: #b4bcc5; --good: #53c88f; --bad: #ff8f86; --obj: #343b42; --grid: #2b3238;
+    --accent: #ff9a55; --on-accent: #1a1d20; --good-bg: #17342a; --bad-bg: #3b1f1f; --orange-soft: #3a2a1f; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #181b1e; --surface: #23272b; --ink: #eceef0; --muted: #a3acb5; --line: #384047;
+  --force: #ff9a55; --react: #b4bcc5; --good: #53c88f; --bad: #ff8f86; --obj: #343b42; --grid: #2b3238;
+  --accent: #ff9a55; --on-accent: #1a1d20; --good-bg: #17342a; --bad-bg: #3b1f1f; --orange-soft: #3a2a1f; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.5;
+  padding-block: 20px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px; }
+header { display: flex; flex-direction: column; gap: 4px; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 6vw, 40px); line-height: 1.08; margin: 0; text-wrap: balance; }
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+button { font: inherit; color: inherit; cursor: pointer; }
+button:focus-visible, .card:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.tab { border: 2px solid var(--line); background: var(--surface); border-radius: 999px; padding: 8px 18px; font-weight: 700; }
+.tab[aria-current="page"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.panel { display: flex; flex-direction: column; gap: 14px; }
+.panel[hidden] { display: none; }
+.bar { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; justify-content: space-between; }
+.seg { display: inline-flex; border: 2px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--surface); }
+.seg button { border: 0; background: transparent; padding: 7px 14px; font-weight: 600; font-size: 15px; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
+.btn { border: 2px solid var(--line); background: var(--surface); border-radius: 10px; padding: 9px 16px; font-weight: 700; }
+.btn:hover:not(:disabled) { border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.btn.good { background: var(--good); border-color: var(--good); color: #fff; }
+.btn.warn { background: var(--surface); border-color: var(--react); }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.meter { display: flex; flex-direction: column; gap: 6px; }
+.meter-top { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.track { height: 8px; border-radius: 8px; background: var(--line); overflow: hidden; display: flex; }
+.track i { display: block; height: 100%; }
+.track .got { background: var(--good); }
+.track .miss { background: var(--react); }
+
+/* flash card */
+.stage { perspective: 1200px; }
+.card { display: grid; width: 100%; text-align: left; border: 0; padding: 0; background: none; border-radius: 18px; transform-style: preserve-3d; transition: transform .55s cubic-bezier(.3,.7,.2,1); }
+.card.flipped { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; background: var(--surface); border: 2px solid var(--line); border-radius: 18px; padding: 20px; min-height: 380px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.face.back { transform: rotateY(180deg); }
+.chip { align-self: flex-start; font-family: var(--mono); font-size: 12px; font-weight: 700; border: 1.5px solid var(--line); border-radius: 6px; padding: 2px 8px; color: var(--muted); }
+.term { font-family: var(--display); font-weight: 700; font-size: clamp(32px, 8vw, 52px); line-height: 1.05; margin: 0; text-wrap: balance; }
+.front-center { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+.flip-hint { font-size: 14px; color: var(--muted); margin: 0; }
+.back h2 { font-family: var(--display); font-size: 24px; line-height: 1.1; margin: 0; }
+.def { margin: 0; font-size: 18px; }
+.fig { background-color: var(--surface); background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: 14px 14px; border: 1.5px solid var(--line); border-radius: 12px; padding: 6px; display: flex; justify-content: center; }
+.fig svg { width: 100%; max-width: 380px; height: auto; display: block; }
+.fig.big svg { max-width: 440px; }
+.state-pill { align-self: flex-start; font-size: 13px; font-weight: 700; border-radius: 999px; padding: 2px 10px; }
+.state-pill.got { background: var(--good-bg); color: var(--good); }
+.state-pill.miss { background: var(--bad-bg); color: var(--bad); }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; align-items: center; }
+.actions .grp { display: flex; gap: 10px; flex-wrap: wrap; }
+.note { color: var(--muted); font-size: 14px; margin: 0; }
+
+/* svg art */
+svg .obj { fill: var(--obj); stroke: var(--ink); stroke-width: 2; }
+svg .gnd { stroke: var(--ink); stroke-width: 2; }
+svg .teeth { stroke: var(--ink); stroke-width: 1.5; fill: none; }
+svg .lbl { fill: var(--ink); font: 700 10.5px var(--mono); }
+svg .cap { fill: var(--muted); font: 600 10.5px var(--body); }
+svg .big { fill: var(--ink); font: 700 30px var(--display); }
+svg .dash { fill: none; stroke: var(--muted); stroke-width: 2; stroke-dasharray: 5 4; }
+svg .arr { stroke-linecap: round; }
+svg .arr line { stroke: currentColor; }
+svg .arr polygon { fill: currentColor; }
+svg .arr.f { color: var(--force); }
+svg .arr.r { color: var(--react); }
+svg .arr.n { color: var(--ink); }
+
+/* quiz */
+.qcard { background: var(--surface); border: 2px solid var(--line); border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+.qtext { font-family: var(--display); font-weight: 600; font-size: clamp(20px, 4.5vw, 24px); line-height: 1.25; margin: 0; text-wrap: balance; }
+.opts { display: flex; flex-direction: column; gap: 10px; }
+.opt { text-align: left; border: 2px solid var(--line); background: var(--surface); border-radius: 12px; padding: 12px 14px; display: flex; gap: 12px; align-items: flex-start; }
+.opt .k { font-family: var(--mono); font-weight: 700; font-size: 13px; border: 1.5px solid var(--line); border-radius: 6px; min-width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; flex: none; }
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; }
+.opt.right { border-color: var(--good); background: var(--good-bg); }
+.opt.sel { border-color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.opt .t { min-width: 0; }
+.fb { border-radius: 12px; padding: 12px 14px; border: 2px solid var(--line); }
+.fb.right { border-color: var(--good); background: var(--good-bg); }
+.fb.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.fb strong { display: block; }
+.score { font-family: var(--display); font-weight: 700; font-size: clamp(40px, 10vw, 64px); line-height: 1; margin: 0; font-variant-numeric: tabular-nums; }
+.review { display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.review li { border: 2px solid var(--line); border-radius: 12px; padding: 12px 14px; background: var(--surface); }
+.review .q { font-weight: 700; margin: 0 0 4px; }
+.review .a { margin: 0; color: var(--good); font-weight: 600; }
+.review .w { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .face { padding: 16px; min-height: 360px; }
+  .def { font-size: 17px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card { transition: none; }
+}
+
+/* ---- Study Guide Zone shell ---- */
+body { margin: 0; padding: 0 0 48px; }
+.in { max-width: 780px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.band { display: block; background: var(--orange); color: var(--band-ink); border-bottom: 6px solid var(--gray-dark); padding-block: 18px 16px; }
+.band .in { display: flex; gap: 16px; align-items: center; }
+.logo { flex: none; width: 76px; height: 76px; border-radius: 50%; background: #fff; border: 3px solid var(--gray-dark); display: grid; place-items: center; overflow: hidden; }
+.logo img { width: 100%; height: 100%; object-fit: contain; }
+.logo svg { width: 46px; height: 46px; }
+.band .titles { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.nw { white-space: nowrap; }
+.cradle { flex: none; width: 150px; height: auto; }
+@media (prefers-reduced-motion: no-preference) {
+  .cradle .wvmove { animation: wvslide 3s linear infinite; }
+}
+@keyframes wvslide { from { transform: translateX(0); } to { transform: translateX(76px); } }
+svg .wv { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+svg .rest { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 4 4; }
+svg .hl { fill: var(--force); stroke: var(--ink); stroke-width: 1.5; }
+@media (max-width: 640px) { .band .in { flex-wrap: wrap; } .band .titles { flex: 1 1 200px; } .cradle { flex: 0 0 100%; width: 100%; max-width: none; height: 84px; margin-top: 2px; } }
+.band .eyebrow { color: var(--band-ink); font-weight: 700; }
+.band h1 { font-family: var(--display); font-weight: 800; font-size: clamp(28px, 7.2vw, 54px); line-height: .95; letter-spacing: .01em; text-transform: uppercase; margin: 0; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.4); text-wrap: balance; }
+.band .sub { margin: 4px 0 0; font-weight: 600; font-size: 15px; }
+main.in { display: flex; flex-direction: column; gap: 16px; padding-top: 16px; }
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+.tab[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.tab { font-size: 15px; padding: 8px 14px; }
+.tabs { align-items: center; }
+.nimg { height: 80px; width: auto; align-self: center; margin-left: 6px; color: var(--ink); }
+.h2 { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 6vw, 34px); line-height: 1.05; margin: 0; text-transform: uppercase; letter-spacing: .01em; }
+.h3 { font-family: var(--display); font-weight: 700; font-size: 22px; line-height: 1.1; margin: 0; }
+.box { background: var(--surface); border: 2px solid var(--line); border-radius: 16px; padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.box.hot { border-color: var(--orange); background: var(--orange-soft); }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.box p, .box ul, .box ol { margin: 0; }
+.box ul, .box ol { padding-left: 22px; display: flex; flex-direction: column; gap: 4px; }
+.formula { font-family: var(--mono); font-weight: 700; font-size: clamp(18px, 4.6vw, 26px); background: var(--gray-dark); color: #fff; border-radius: 12px; padding: 12px 16px; overflow-x: auto; }
+.tbl { overflow-x: auto; }
+.tbl table { border-collapse: collapse; width: 100%; font-size: 15px; }
+.tbl caption { font-weight: 700; padding-bottom: 6px; text-align: center; }
+.tbl th, .tbl td { border: 1.5px solid var(--line); padding: 7px 10px; text-align: left; vertical-align: top; }
+.tbl th { background: var(--obj); }
+details.acc { border: 2px solid var(--line); border-radius: 12px; background: var(--surface); }
+details.acc summary { cursor: pointer; padding: 11px 14px; font-weight: 700; list-style-position: inside; }
+details.acc summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 10px; }
+details.acc .in2 { padding: 0 14px 14px; display: flex; flex-direction: column; gap: 6px; }
+.vocab { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px; margin: 0; }
+.vocab div { border: 1.5px solid var(--line); border-radius: 10px; padding: 8px 10px; background: var(--surface); }
+.vocab dt { font-weight: 700; }
+.vocab dd { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
+.cta { display: flex; flex-wrap: wrap; gap: 10px; }
+a.btn { text-decoration: none; display: inline-block; }
+.ai-note { font-size: 14px; color: var(--muted); margin: 0; }
+.ai-out { white-space: pre-wrap; }
+.dataset { background: var(--obj); border-radius: 10px; padding: 10px 12px; }
+/* dropdown question */
+.ddrow { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; }
+.ddrow label { font-weight: 600; }
+.ddrow select { font: inherit; color: var(--ink); background: var(--surface); border: 2px solid var(--line); border-radius: 10px; padding: 8px 10px; min-width: 150px; }
+.ddrow select:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.ddrow select.ok { border-color: var(--good); background: var(--good-bg); }
+.ddrow select.bad { border-color: var(--bad); background: var(--bad-bg); }
+/* drag and drop question */
+.dd-bank { display: flex; flex-wrap: wrap; gap: 10px; background: var(--obj); border: 1.5px solid var(--line); border-radius: 12px; padding: 12px; min-height: 64px; align-items: center; }
+.dd-bank.over { border-color: var(--accent); }
+.chipbtn { border: 2px solid var(--line); background: var(--surface); border-radius: 8px; padding: 8px 12px; font-weight: 600; cursor: grab; }
+.chipbtn[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 3px var(--orange-soft); }
+.chipbtn:disabled { cursor: default; }
+.dd-wrap { display: flex; gap: 12px; align-items: stretch; flex-wrap: wrap; }
+.dd-wrap .fig { flex: 0 0 auto; }
+.dd-wrap .fig svg { width: 210px; max-width: 100%; height: auto; }
+.dd-zones { display: flex; flex-direction: column; justify-content: space-between; gap: 12px; flex: 1 1 200px; min-width: 0; padding-block: 8px; }
+.zone { min-height: 56px; border: 2px dashed var(--muted); border-radius: 10px; display: flex; align-items: center; justify-content: center; padding: 4px; background: var(--surface); font-size: 14px; color: var(--muted); text-align: center; }
+.zone.over { border-color: var(--accent); background: var(--orange-soft); }
+.zone.ok { border: 2px solid var(--good); background: var(--good-bg); color: var(--ink); }
+.zone.bad { border: 2px solid var(--bad); background: var(--bad-bg); color: var(--ink); }
+.zone:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+/* matrix question */
+.mx { width: 100%; border-collapse: collapse; font-size: 15px; }
+.mx th, .mx td { border: 1.5px solid var(--line); padding: 8px 10px; text-align: center; vertical-align: middle; }
+.mx thead th { background: var(--obj); font-size: 14px; }
+.mx tbody th { text-align: left; font-weight: 600; background: var(--surface); min-width: 150px; }
+.mx input[type="radio"] { width: 22px; height: 22px; accent-color: var(--accent); }
+.mx .cellok { background: var(--good-bg); }
+.mx .cellbad { background: var(--bad-bg); }
+.vh { position: absolute; left: -9999px; }
+/* order the spectrum */
+.ord-modes { display: flex; flex-wrap: wrap; gap: 8px; }
+.ord-modes .btn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.ord-end { font: 700 13px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .04em; padding: 2px 4px; }
+.ord-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.ord-row { display: flex; align-items: center; gap: 10px; border: 2px solid var(--line); background: var(--surface); border-radius: 12px; padding: 8px 10px; cursor: grab; }
+.ord-row.drag { opacity: .45; }
+.ord-row.over { border-color: var(--accent); }
+.ord-row.ok { border-color: var(--good); background: var(--good-bg); }
+.ord-row.bad { border-color: var(--bad); background: var(--bad-bg); }
+.ord-n { font: 700 14px var(--mono); min-width: 26px; height: 26px; border: 1.5px solid var(--line); border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; }
+.ord-sw { width: 34px; height: 34px; border-radius: 8px; border: 2px solid var(--ink); flex: none; }
+.ord-t { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.ord-t small { color: var(--muted); font-size: 13px; }
+.ord-btns { display: flex; gap: 6px; }
+.ord-btns button { width: 36px; height: 36px; border: 2px solid var(--line); background: var(--surface); border-radius: 8px; font-size: 14px; }
+.ord-btns button:hover:not(:disabled) { border-color: var(--accent); }
+.ord-btns button:disabled { opacity: .35; }
+.hideans .ans { color: transparent; background: var(--line); border-radius: 6px; cursor: pointer; user-select: none; display: inline-block; min-width: 3em; }
+.hideans .ans.rev { color: inherit; background: none; cursor: default; user-select: auto; }
+.btn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.teacher { margin: 28px 0 8px; text-align: center; font-size: 13px; }
+.teacher a { color: var(--muted); text-decoration: underline; }
+.rv-q { border: 2px solid var(--line); background: var(--surface); border-radius: 14px; padding: 14px; margin: 0 0 14px; break-inside: avoid; }
+.rv-q h3 { margin: 6px 0 8px; font-size: 17px; line-height: 1.3; }
+.rv-o { margin: 6px 0; padding: 8px 10px; border-radius: 8px; border: 1.5px solid var(--line); font-size: 15px; }
+.rv-o.ok { border-color: var(--good); background: var(--good-bg); }
+.rv-o small { display: block; color: var(--muted); margin-top: 2px; }
+.rv-bar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+</style>
+
+<header class="band">
+  <div class="in">
+    <div class="logo" id="logo">
+      <img id="logo-img" alt="Celina Bobcats logo" hidden>
+      <svg id="logo-paw" viewBox="0 0 64 64" role="img" aria-label="Paw print" focusable="false">
+        <ellipse cx="32" cy="44" rx="15" ry="11" fill="#f26b1d"/>
+        <ellipse cx="13" cy="30" rx="6" ry="8.5" fill="#f26b1d" transform="rotate(-18 13 30)"/>
+        <ellipse cx="25" cy="17" rx="6" ry="9" fill="#f26b1d" transform="rotate(-6 25 17)"/>
+        <ellipse cx="39" cy="17" rx="6" ry="9" fill="#f26b1d" transform="rotate(6 39 17)"/>
+        <ellipse cx="51" cy="30" rx="6" ry="8.5" fill="#f26b1d" transform="rotate(18 51 30)"/>
+      </svg>
+    </div>
+    <div class="titles">
+      <p class="eyebrow">Moore Middle School · Celina ISD · Grade 8 Science</p>
+      <h1><span class="nw">8th Grade</span> <span class="nw">Science</span> <span class="nw">Unit 4</span> <span class="nw">Study Guide</span></h1>
+      <p class="sub">Unit: Waves and the Electromagnetic Spectrum · TEKS 8.8A and 8.8B</p>
+    </div>
+    <svg class="cradle" viewBox="0 0 180 120" role="img" aria-label="A transverse wave moving to the right" focusable="false">
+      <line x1="6" y1="60" x2="174" y2="60" stroke="#3a4046" stroke-width="2" stroke-dasharray="5 5" opacity=".6"/>
+      <g class="wvmove"><polyline points="-62.0,60.0 -58.8,52.2 -55.7,45.0 -52.5,38.8 -49.3,34.0 -46.2,31.0 -43.0,30.0 -39.8,31.0 -36.7,34.0 -33.5,38.8 -30.3,45.0 -27.2,52.2 -24.0,60.0 -20.8,67.8 -17.7,75.0 -14.5,81.2 -11.3,86.0 -8.2,89.0 -5.0,90.0 -1.8,89.0 1.3,86.0 4.5,81.2 7.7,75.0 10.8,67.8 14.0,60.0 17.2,52.2 20.3,45.0 23.5,38.8 26.7,34.0 29.8,31.0 33.0,30.0 36.2,31.0 39.3,34.0 42.5,38.8 45.7,45.0 48.8,52.2 52.0,60.0 55.2,67.8 58.3,75.0 61.5,81.2 64.7,86.0 67.8,89.0 71.0,90.0 74.2,89.0 77.3,86.0 80.5,81.2 83.7,75.0 86.8,67.8 90.0,60.0 93.2,52.2 96.3,45.0 99.5,38.8 102.7,34.0 105.8,31.0 109.0,30.0 112.2,31.0 115.3,34.0 118.5,38.8 121.7,45.0 124.8,52.2 128.0,60.0 131.2,67.8 134.3,75.0 137.5,81.2 140.7,86.0 143.8,89.0 147.0,90.0 150.2,89.0 153.3,86.0 156.5,81.2 159.7,75.0 162.8,67.8 166.0,60.0 169.2,52.2 172.3,45.0 175.5,38.8 178.7,34.0 181.8,31.0 185.0,30.0 188.2,31.0 191.3,34.0 194.5,38.8 197.7,45.0 200.8,52.2 204.0,60.0 207.2,67.8 210.3,75.0 213.5,81.2 216.7,86.0 219.8,89.0 223.0,90.0 226.2,89.0 229.3,86.0 232.5,81.2 235.7,75.0 238.8,67.8 242.0,60.0 245.2,52.2 248.3,45.0 251.5,38.8 254.7,34.0 257.8,31.0 261.0,30.0 264.2,31.0 267.3,34.0 270.5,38.8 273.7,45.0 276.8,52.2 280.0,60.0 283.2,67.8 286.3,75.0 289.5,81.2 292.7,86.0 295.8,89.0 299.0,90.0 302.2,89.0 305.3,86.0 308.5,81.2 311.7,75.0 314.8,67.8 318.0,60.0" fill="none" stroke="#3a4046" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+    </svg>
+  </div>
+</header>
+
+<main class="in">
+  <nav class="tabs" aria-label="Study sections">
+    <button class="tab" id="tab-guide" type="button">Study guide</button>
+    <button class="tab" id="tab-cards" type="button">Flash cards</button>
+    <button class="tab" id="tab-quiz" type="button">Practice quiz</button>
+    <button class="tab" id="tab-order" type="button">Order the spectrum</button>
+    <button class="tab" id="tab-charts" type="button">Charts</button>
+    <svg class="nimg" id="nimg" viewBox="0 0 120 64" role="img" aria-label="The electromagnetic spectrum: radio, microwave, infrared, visible, ultraviolet, X-ray, gamma ray" focusable="false">
+      <defs><linearGradient id="navis" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#d93025"/><stop offset=".25" stop-color="#f4b400"/><stop offset=".5" stop-color="#34a853"/><stop offset=".75" stop-color="#1a73e8"/><stop offset="1" stop-color="#7b3fc4"/></linearGradient></defs>
+      <rect x="4" y="8" width="14" height="30" rx="2" fill="#f26b1d" fill-opacity="0.20" stroke="currentColor" stroke-width="1.5"/><rect x="20" y="8" width="14" height="30" rx="2" fill="#f26b1d" fill-opacity="0.33" stroke="currentColor" stroke-width="1.5"/><rect x="36" y="8" width="14" height="30" rx="2" fill="#f26b1d" fill-opacity="0.46" stroke="currentColor" stroke-width="1.5"/><rect x="52" y="8" width="14" height="30" rx="2" fill="url(#navis)" stroke="currentColor" stroke-width="1.5"/><rect x="68" y="8" width="14" height="30" rx="2" fill="#f26b1d" fill-opacity="0.72" stroke="currentColor" stroke-width="1.5"/><rect x="84" y="8" width="14" height="30" rx="2" fill="#f26b1d" fill-opacity="0.85" stroke="currentColor" stroke-width="1.5"/><rect x="100" y="8" width="14" height="30" rx="2" fill="#f26b1d" fill-opacity="0.98" stroke="currentColor" stroke-width="1.5"/>
+      <line x1="6" y1="52" x2="112" y2="52" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><polygon points="116,52 106,46 106,58" fill="currentColor"/>
+    </svg>
+  </nav>
+
+  <section class="panel" id="view-guide" aria-label="Study guide">
+    <h2 class="h2">Study Guide</h2>
+    <div class="two">
+      <div class="box hot"><span class="chip">TEKS 8.8A</span><p><strong>Transverse waves.</strong> Compare the characteristics of amplitude, frequency and wavelength in transverse waves, including the electromagnetic spectrum.</p></div>
+      <div class="box hot"><span class="chip">TEKS 8.8B</span><p><strong>Using electromagnetic waves.</strong> Explain the use of electromagnetic waves in applications such as radiation therapy, wireless technologies, fiber optics, microwaves, ultraviolet sterilization, astronomical observations and X-rays.</p></div>
+    </div>
+
+    <div class="box">
+      <h3 class="h3">Mechanical waves and transverse waves</h3>
+      <p>A <strong>mechanical wave</strong> needs a <strong>medium</strong> (matter) to travel through. Sound, water waves, waves on a rope and earthquake waves are mechanical waves. They cannot travel through empty space.</p>
+      <p>A <strong>transverse wave</strong> is a wave in which the particles of the medium move <strong>perpendicular</strong> (at a right angle) to the direction the wave travels. Waves on a rope or string and ripples on water are transverse. Light and all other electromagnetic waves are transverse too.</p>
+      <div class="tbl"><table>
+        <thead><tr><th></th><th>Mechanical waves</th><th>Electromagnetic waves</th></tr></thead>
+        <tbody>
+          <tr><td>Need a medium?</td><td>Yes</td><td>No, they can cross empty space</td></tr>
+          <tr><td>Examples</td><td>Sound, rope waves, water waves</td><td>Light, radio, X-rays</td></tr>
+        </tbody></table></div>
+    </div>
+
+    <div class="box">
+      <h3 class="h3">Waves move energy, not matter</h3>
+      <p>A wave <strong>transfers energy</strong> from one place to another. The <strong>matter</strong> of the medium does <strong>not</strong> travel along with the wave. Each particle only moves back and forth around its resting point, and then ends up where it started.</p>
+      <div class="fig big" id="g-energy"></div>
+      <ul>
+        <li>Shake a rope: the energy travels down the rope, but the rope stays in your hands.</li>
+        <li>A cork on a pond bobs up and down as waves pass. It is not carried to shore by the wave.</li>
+        <li>A stadium wave moves around the stadium, but each fan only stands up and sits down in the same seat.</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3 class="h3">Parts of a transverse wave</h3>
+      <p>A wave carries <strong>energy</strong> from one place to another. It does not carry matter along with it. In a <strong>transverse wave</strong>, the particles move up and down while the wave travels sideways. The two motions are <strong>perpendicular</strong>, which means at a right angle.</p>
+      <div class="fig big" id="g-wave"></div>
+      <div class="tbl"><table>
+        <thead><tr><th>Part</th><th>What it is</th><th>Unit</th></tr></thead>
+        <tbody>
+          <tr><td>Resting point</td><td>The middle line where the rope sits when there is no wave.</td><td>no unit</td></tr>
+          <tr><td>Crest</td><td>The highest point of the wave, above the resting point.</td><td>no unit</td></tr>
+          <tr><td>Trough</td><td>The lowest point of the wave, below the resting point.</td><td>no unit</td></tr>
+          <tr><td>Amplitude</td><td>Distance from the resting point to a crest (or to a trough). Bigger amplitude means more energy.</td><td>meters (m) for a rope</td></tr>
+          <tr><td>Wavelength</td><td>Distance from one crest to the next crest (or trough to trough).</td><td>meters (m)</td></tr>
+          <tr><td>Frequency</td><td>How many complete waves pass a point each second.</td><td>hertz (Hz)</td></tr>
+        </tbody></table></div>
+    </div>
+
+    <div class="box hot">
+      <h3 class="h3">Explain the relationships</h3>
+      <p><strong>1. Explain the relationship between frequency and wavelength.</strong></p>
+      <div class="fig big" id="g-rel1"></div>
+      <p><strong>Sentence starters:</strong> As the frequency of a wave increases, the wavelength ___. This is because ___.</p>
+      <details class="acc"><summary>Show a sample answer</summary><div class="in2"><p>Frequency and wavelength have an <strong>inverse relationship</strong>. When waves travel at the same speed, a higher frequency means a shorter wavelength, and a lower frequency means a longer wavelength. More waves pass a point each second, so each wave has to be shorter to fit. For example, X-rays have a higher frequency and a much shorter wavelength than radio waves.</p></div></details>
+      <p><strong>2. Explain the relationship between amplitude and frequency.</strong></p>
+      <div class="fig big" id="g-rel2"></div>
+      <p><strong>Sentence starters:</strong> Amplitude and frequency are ___ of each other. Changing the amplitude makes the wave ___, but it does not change ___.</p>
+      <details class="acc"><summary>Show a sample answer</summary><div class="in2"><p>Amplitude and frequency are <strong>independent</strong>. They do not depend on each other. Amplitude is how far the wave rises from the resting point, and it is linked to the energy of the wave. Frequency is how many waves pass a point each second. On a rope, shaking your hand with a bigger motion changes the amplitude, and shaking it faster changes the frequency. You can change one without changing the other.</p></div></details>
+    </div>
+
+    <div class="box">
+      <h3 class="h3">Patterns to know</h3>
+      <ul>
+        <li>Shake a rope with a bigger motion and the <strong>amplitude</strong> goes up. The wave carries more energy.</li>
+        <li>Shake faster and the <strong>frequency</strong> goes up. More waves pass each second.</li>
+        <li>When waves travel at the same speed, a higher frequency means a <strong>shorter wavelength</strong>. Frequency and wavelength change in opposite directions.</li>
+        <li>All electromagnetic waves travel at the speed of light in empty space, about 300,000 km per second.</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3 class="h3">The electromagnetic spectrum (8.8A)</h3>
+      <p>Electromagnetic (EM) waves are transverse waves that <strong>do not need a medium</strong>. They can travel through empty space. The spectrum lists them by wavelength and frequency.</p>
+      <div class="fig big" id="g-spec"></div>
+      <div class="tbl"><table>
+        <thead><tr><th>Wave</th><th>Wavelength and frequency</th><th>Example uses (8.8B)</th></tr></thead>
+        <tbody>
+          <tr><td>Radio</td><td>Longest wavelength, lowest frequency</td><td>Radio and TV, Wi-Fi, wireless technologies, radio telescopes</td></tr>
+          <tr><td>Microwave</td><td>Very long to short</td><td>Microwave ovens, cell phones, satellite signals</td></tr>
+          <tr><td>Infrared</td><td>Longer than visible light</td><td>Heat lamps, TV remotes, infrared telescopes, fiber optics</td></tr>
+          <tr><td>Visible light</td><td>Red is longest, violet is shortest</td><td>Seeing, fiber optics, lasers</td></tr>
+          <tr><td>Ultraviolet</td><td>Shorter than visible light</td><td>Sterilizing tools and water, causes sunburn</td></tr>
+          <tr><td>X-ray</td><td>Very short, high frequency</td><td>Medical images, radiation therapy, X-ray telescopes</td></tr>
+          <tr><td>Gamma ray</td><td>Shortest wavelength, highest frequency</td><td>Radiation therapy, gamma-ray telescopes</td></tr>
+        </tbody></table></div>
+      <p>Moving toward the gamma-ray end: wavelength gets <strong>shorter</strong>, frequency gets <strong>higher</strong>, and each wave carries <strong>more energy</strong>.</p>
+    </div>
+
+    <div class="box">
+      <h3 class="h3">How we use EM waves (8.8B)</h3>
+      <details class="acc"><summary>Radiation therapy</summary><div class="in2"><p>Doctors aim a narrow beam of high-energy X-rays or gamma rays at a tumor. The energy damages the cancer cells so they stop growing. The beam is aimed from several angles to protect healthy tissue.</p></div></details>
+      <details class="acc"><summary>Wireless technologies</summary><div class="in2"><p>Phones, Wi-Fi, Bluetooth, radio and TV use radio waves and microwaves. A device turns information into waves, and another device turns the waves back into information. No wire is needed because EM waves travel through air and space.</p></div></details>
+      <details class="acc"><summary>Fiber optics</summary><div class="in2"><p>Data is sent as pulses of light (often infrared) through thin strands of glass. The light bounces along inside the glass, even around bends, so a signal can travel a long way with very little loss.</p></div></details>
+      <details class="acc"><summary>Microwaves</summary><div class="in2"><p>A microwave oven sends microwaves into food. Water molecules in the food absorb the energy and vibrate, which warms the food. Microwaves are also used for radar and satellite communication.</p></div></details>
+      <details class="acc"><summary>Ultraviolet sterilization</summary><div class="in2"><p>Ultraviolet (UV) light has enough energy to damage the DNA of germs, so they cannot reproduce. Hospitals and water-treatment plants use UV lamps to sterilize tools, air and water.</p></div></details>
+      <details class="acc"><summary>Astronomical observations</summary><div class="in2"><p>Stars, galaxies and gas clouds give off many kinds of EM waves. Radio, infrared, visible, ultraviolet and X-ray telescopes each reveal different details. Putting the pictures together gives a fuller view of the universe.</p></div></details>
+      <details class="acc"><summary>X-rays</summary><div class="in2"><p>X-rays pass through soft tissue but are absorbed by dense bone. A detector behind the body records the difference, so bones show up white. X-rays are also used in airport security scanners.</p></div></details>
+    </div>
+
+    <div class="box">
+      <h3 class="h3">Mistakes to avoid</h3>
+      <ul>
+        <li>Amplitude is measured from the <strong>resting point</strong> to a crest. It is not the full distance from trough to crest.</li>
+        <li>Wavelength is a distance along the wave. Frequency is a count of waves per second. Do not mix them up.</li>
+        <li>Higher frequency means a <strong>shorter</strong> wavelength, not a longer one.</li>
+        <li>Mechanical waves need a medium. Electromagnetic waves do not. Both can be transverse waves.</li>
+        <li>A wave moves <strong>energy</strong>, not matter. The particles of the medium do not travel with the wave.</li>
+        <li>In a transverse wave, the particles move <strong>perpendicular</strong> to the way the wave travels, not in the same direction.</li>
+        <li>Visible light is only a small part of the EM spectrum. Radio waves, X-rays and the others are EM waves too.</li>
+        <li>Microwaves, radio waves and X-rays all travel at the same speed in empty space. They differ in wavelength, frequency and energy.</li>
+      </ul>
+    </div>
+
+    <details class="acc"><summary>Vocabulary list</summary><div class="in2"><dl class="vocab" id="vocab-list"></dl></div></details>
+
+    <div class="cta">
+      <a class="btn primary" href="#cards">Practice with flash cards</a>
+      <a class="btn" href="#quiz">Take the quiz</a>
+      <a class="btn" href="#charts">Study the charts</a>
+      <a class="btn" href="#order">Order the spectrum</a>
+    </div>
+  </section>
+
+  <section class="panel" id="view-charts" aria-label="Charts" hidden>
+    <h2 class="h2">Charts</h2>
+    <div class="box" id="chart-box">
+      <h3 class="h3">Electromagnetic spectrum notes chart</h3>
+      <p>Use this chart to study. Press <strong>Practice mode</strong> to hide the answers. Then try to fill in each blank in your head and tap a gray box to check it.</p>
+      <p><button type="button" class="btn" data-hideans="chart-box" aria-pressed="false">Practice mode: hide answers</button></p>
+      <div class="tbl"><table>
+        <thead><tr><th>Wave</th><th>High, low or medium frequency?</th><th>Long, short or medium wavelength?</th><th>High, low or medium energy?</th><th>Real-life examples</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Radio waves</strong></td><td><span class="ans" tabindex="0">Low</span></td><td><span class="ans" tabindex="0">Long (longest)</span></td><td><span class="ans" tabindex="0">Low</span></td><td><span class="ans" tabindex="0">AM/FM radio, TV broadcasts, communication towers</span></td></tr>
+          <tr><td><strong>Microwaves</strong></td><td><span class="ans" tabindex="0">Low (higher than radio)</span></td><td><span class="ans" tabindex="0">Long (shorter than radio)</span></td><td><span class="ans" tabindex="0">Low</span></td><td><span class="ans" tabindex="0">Microwave ovens, cell phones, satellite signals</span></td></tr>
+          <tr><td><strong>Infrared waves</strong></td><td><span class="ans" tabindex="0">Medium</span></td><td><span class="ans" tabindex="0">Medium</span></td><td><span class="ans" tabindex="0">Medium</span></td><td><span class="ans" tabindex="0">TV remote controls, heat lamps, night vision cameras</span></td></tr>
+          <tr><td><strong>Visible light</strong></td><td><span class="ans" tabindex="0">Medium</span></td><td><span class="ans" tabindex="0">Medium</span></td><td><span class="ans" tabindex="0">Medium</span></td><td><span class="ans" tabindex="0">Seeing with our eyes, cameras and photography, fiber optics</span></td></tr>
+          <tr><td><strong>Ultraviolet waves</strong></td><td><span class="ans" tabindex="0">High</span></td><td><span class="ans" tabindex="0">Short</span></td><td><span class="ans" tabindex="0">High</span></td><td><span class="ans" tabindex="0">Sunburn, sterilizing tools, black lights</span></td></tr>
+          <tr><td><strong>X-rays</strong></td><td><span class="ans" tabindex="0">High (higher than UV)</span></td><td><span class="ans" tabindex="0">Short (shorter than UV)</span></td><td><span class="ans" tabindex="0">High</span></td><td><span class="ans" tabindex="0">Images of bones, airport bag scanners, industrial inspections</span></td></tr>
+          <tr><td><strong>Gamma rays</strong></td><td><span class="ans" tabindex="0">High (highest)</span></td><td><span class="ans" tabindex="0">Short (shortest)</span></td><td><span class="ans" tabindex="0">High</span></td><td><span class="ans" tabindex="0">Radiation therapy, sterilizing medical equipment, gamma-ray telescopes</span></td></tr>
+        </tbody></table></div>
+      <h3 class="h3">Match each wave to its everyday application</h3>
+      <div class="tbl"><table>
+        <thead><tr><th>Application</th><th>Electromagnetic wave</th><th>Application</th><th>Electromagnetic wave</th></tr></thead>
+        <tbody>
+          <tr><td>Causes sunburns</td><td><span class="ans" tabindex="0">Ultraviolet</span></td><td>Heat (thermal) energy</td><td><span class="ans" tabindex="0">Infrared</span></td></tr>
+          <tr><td>Bluetooth / Wi-Fi</td><td><span class="ans" tabindex="0">Radio waves and microwaves</span></td><td>Night vision</td><td><span class="ans" tabindex="0">Infrared</span></td></tr>
+          <tr><td>Images of bones</td><td><span class="ans" tabindex="0">X-rays</span></td><td>Air traffic control (radar)</td><td><span class="ans" tabindex="0">Radio waves</span></td></tr>
+          <tr><td>Camera / photography</td><td><span class="ans" tabindex="0">Visible light</span></td><td>Communication towers</td><td><span class="ans" tabindex="0">Radio waves and microwaves</span></td></tr>
+          <tr><td>Kills bacteria / sterilization</td><td><span class="ans" tabindex="0">Ultraviolet (also gamma rays)</span></td><td>Industrial inspections</td><td><span class="ans" tabindex="0">X-rays (also gamma rays)</span></td></tr>
+          <tr><td>Causes cancer (too much exposure)</td><td><span class="ans" tabindex="0">Gamma rays (also X-rays and ultraviolet)</span></td><td>Scanning bags (airport security)</td><td><span class="ans" tabindex="0">X-rays</span></td></tr>
+          <tr><td>Remote control</td><td><span class="ans" tabindex="0">Infrared</span></td><td>Radiation therapy</td><td><span class="ans" tabindex="0">Gamma rays (also X-rays)</span></td></tr>
+        </tbody></table></div>
+      <p>Some applications can use more than one type of wave. The answers show the best match first.</p>
+    </div>
+
+  </section>
+  <section class="panel" id="view-cards" aria-label="Flash cards" hidden></section>
+  <section class="panel" id="view-quiz" aria-label="Practice quiz" hidden></section>
+  <section class="panel" id="view-order" aria-label="Order the electromagnetic spectrum" hidden></section>
+
+
+  <section class="panel" id="view-review" aria-label="Teacher review of all quiz questions" hidden></section>
+  <p class="teacher"><a href="#review" id="open-review">Teacher view: see all quiz questions and answers</a></p>
+</main>
+
+<script>
+(function () {
+  var LOGO_SRC = '';
+  var AI = { sample: null };
+  /* ---------- illustration helpers ---------- */
+  function arrow(x1, y1, x2, y2, cls, w) {
+    w = w || 3.5;
+    var dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy), ux = dx / len, uy = dy / len, hs = 10;
+    var bx = x2 - ux * hs, by = y2 - uy * hs, px = -uy * 5.5, py = ux * 5.5;
+    return '<g class="arr ' + cls + '"><line x1="' + x1 + '" y1="' + y1 + '" x2="' + bx + '" y2="' + by + '" stroke-width="' + w + '"/>' +
+      '<polygon points="' + x2 + ',' + y2 + ' ' + (bx + px) + ',' + (by + py) + ' ' + (bx - px) + ',' + (by - py) + '"/></g>';
+  }
+  function t(x, y, s, anchor, cls) {
+    return '<text class="' + (cls || 'lbl') + '" x="' + x + '" y="' + y + '" text-anchor="' + (anchor || 'middle') + '">' + s + '</text>';
+  }
+  function crate(x, y, w, h, extra) { return '<rect class="obj" x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" rx="4"' + (extra || '') + '/>'; }
+  function ground(y) { return '<line class="gnd" x1="6" y1="' + y + '" x2="214" y2="' + y + '"/>'; }
+  function svg(body, caption, showCaption) {
+    if (body.indexOf('<svg') === 0) return body;
+    var cap = '';
+    if (showCaption && caption) {
+      caption.forEach(function (line, i) { cap += t(110, 118 + i * 13, line, 'middle', 'cap'); });
+    }
+    return '<svg viewBox="0 0 220 134" role="img" aria-hidden="true" focusable="false">' + body + cap + '</svg>';
+  }
+
+  /* ---------- wave illustration helpers ---------- */
+  function wave(x0, y0, A, L, n) {
+    var p = [], i, x;
+    for (i = 0; i <= n * 24; i++) { x = x0 + L * i / 24; p.push(x.toFixed(1) + ',' + (y0 - A * Math.sin(2 * Math.PI * i / 24)).toFixed(1)); }
+    return '<polyline class="wv" points="' + p.join(' ') + '"/>';
+  }
+  function rest(y, x1, x2) { return '<line class="rest" x1="' + (x1 || 6) + '" y1="' + y + '" x2="' + (x2 || 214) + '" y2="' + y + '"/>'; }
+  function dot(x, y) { return '<circle class="hl" cx="' + x + '" cy="' + y + '" r="5"/>'; }
+  /* standard wave: rest y=72, amplitude 28, wavelength 64, crests x=30,94,158, troughs x=62,126,190 */
+  function std() { return rest(72) + wave(14, 72, 28, 64, 3); }
+
+  function waveQ() {
+    return std() +
+      arrow(30, 72, 30, 46, 'f') + t(20, 60, 'A') +
+      arrow(62, 26, 32, 26, 'f') + arrow(62, 26, 92, 26, 'f') + t(62, 18, 'B') +
+      arrow(126, 100, 126, 44, 'f') + t(138, 62, 'C') +
+      arrow(174, 118, 160, 118, 'f') + arrow(174, 118, 188, 118, 'f') + t(174, 130, 'D');
+  }
+  function transQ() {
+    return rest(72) + wave(14, 72, 22, 64, 3) + arrow(20, 22, 196, 22, 'n') + t(108, 14, 'wave travels this way', 'middle', 'cap') +
+      dot(46, 72) + arrow(46, 112, 46, 90, 'f') + arrow(46, 112, 46, 124, 'f') + t(110, 120, 'a point on the rope', 'start', 'cap');
+  }
+  function artTherapy(show) {
+    return '<rect class="obj" x="110" y="36" width="84" height="64" rx="14"/>' + dot(152, 68) + arrow(14, 68, 138, 68, 'f') +
+      (show ? t(70, 58, 'beam', 'middle') + t(152, 114, 'tumor', 'middle', 'cap') : t(152, 114, 'tumor', 'middle', 'cap') + t(70, 58, 'beam', 'middle'));
+  }
+  function artWireless() {
+    return '<polygon class="obj" points="26,104 54,104 40,36"/><line class="gnd" x1="40" y1="36" x2="40" y2="24"/>' +
+      '<rect class="obj" x="168" y="50" width="26" height="46" rx="5"/>' + arrow(60, 56, 160, 56, 'f') + arrow(160, 80, 60, 80, 'r') +
+      t(40, 120, 'tower', 'middle', 'cap') + t(181, 120, 'phone', 'middle', 'cap');
+  }
+  function artFiber() {
+    return '<rect class="obj" x="8" y="50" width="204" height="40" rx="20"/>' +
+      '<polyline class="wv" points="20,70 44,56 68,84 92,56 116,84 140,56 164,84 188,56 202,70"/>' +
+      t(110, 38, 'glass fiber', 'middle', 'cap') + t(110, 114, 'signal moves along the fiber', 'middle', 'cap');
+  }
+  function artMicro() {
+    return '<rect class="obj" x="32" y="30" width="156" height="78" rx="8"/><rect x="46" y="42" width="84" height="54" rx="4" fill="none" stroke="var(--ink)" stroke-width="2"/>' +
+      '<circle class="hl" cx="88" cy="78" r="9"/>' + arrow(62, 54, 80, 66, 'f') + arrow(112, 54, 96, 66, 'f') +
+      '<circle class="obj" cx="160" cy="52" r="6"/><circle class="obj" cx="160" cy="80" r="6"/>' + t(88, 120, 'food', 'middle', 'cap');
+  }
+  function artUV() {
+    return '<rect class="obj" x="60" y="16" width="100" height="14" rx="6"/>' + arrow(80, 36, 80, 74, 'f') + arrow(110, 36, 110, 74, 'f') + arrow(140, 36, 140, 74, 'f') +
+      '<rect class="obj" x="50" y="82" width="120" height="14" rx="6"/><circle class="hl" cx="76" cy="78" r="4"/><circle class="hl" cx="128" cy="78" r="4"/>' +
+      t(110, 116, 'lamp over tools and germs', 'middle', 'cap');
+  }
+  function artXray() {
+    return '<rect class="obj" x="88" y="34" width="52" height="64" rx="12"/><rect x="106" y="42" width="16" height="48" rx="7" fill="var(--ink)"/>' +
+      arrow(14, 66, 84, 66, 'f') + arrow(144, 66, 170, 66, 'f') + '<rect class="obj" x="176" y="30" width="12" height="72" rx="3"/>' +
+      t(114, 118, 'arm', 'middle', 'cap') + t(182, 118, 'detector', 'middle', 'cap') + t(40, 56, 'source', 'middle', 'cap');
+  }
+  function artAstro() {
+    return '<circle class="hl" cx="186" cy="26" r="9"/><path class="teeth" d="M30,64 Q84,128 138,64"/><line class="gnd" x1="84" y1="98" x2="84" y2="112"/>' +
+      arrow(176, 34, 124, 58, 'f') + t(50, 44, 'telescope', 'middle', 'cap') + t(186, 46, 'star', 'middle', 'cap');
+  }
+
+  function energySvg() {
+    return '<svg viewBox="0 0 400 150" role="img" aria-label="A wave on a rope moving to the right. The energy moves to the right. A marked piece of the rope only moves up and down, perpendicular to the wave." focusable="false">' +
+      '<line class="rest" x1="6" y1="70" x2="394" y2="70"/>' + wave(30, 70, 28, 100, 3) +
+      arrow(60, 20, 340, 20, 'n') + t(200, 12, 'the wave and its energy move this way', 'middle', 'cap') +
+      arrow(130, 63, 130, 30, 'f') + arrow(130, 77, 130, 114, 'f') + dot(130, 70) +
+      t(200, 138, 'a piece of the rope only moves up and down (perpendicular)', 'middle', 'cap') + '</svg>';
+  }
+  function relSvg(a1, a2, n1, n2, l1, l2, foot) {
+    return '<svg viewBox="0 0 400 200" role="img" aria-label="' + l1 + '. ' + l2 + '." focusable="false">' +
+      '<text class="cap" x="6" y="12" text-anchor="start">' + l1 + '</text><line class="rest" x1="6" y1="48" x2="394" y2="48"/>' + wave(30, 48, a1, 300 / n1, n1) +
+      '<text class="cap" x="6" y="102" text-anchor="start">' + l2 + '</text><line class="rest" x1="6" y1="138" x2="394" y2="138"/>' + wave(30, 138, a2, 300 / n2, n2) +
+      arrow(30, 182, 330, 182, 'n') + t(180, 196, foot, 'middle', 'cap') + '</svg>';
+  }
+  function specSvg() {
+    var names = [['Radio', ''], ['Micro', 'wave'], ['Infra', 'red'], ['Visible', 'light'], ['Ultra', 'violet'], ['X-ray', ''], ['Gamma', 'ray']];
+    var o = '<svg viewBox="0 0 420 150" role="img" aria-label="The electromagnetic spectrum from radio waves, with the longest wavelength, to gamma rays, with the shortest wavelength. Order: radio, microwave, infrared, visible light, ultraviolet, X-ray, gamma ray." focusable="false">' +
+      '<defs><linearGradient id="vis" x1="0" x2="1"><stop offset="0" stop-color="#d93025"/><stop offset=".25" stop-color="#f4b400"/><stop offset=".5" stop-color="#34a853"/><stop offset=".75" stop-color="#1a73e8"/><stop offset="1" stop-color="#7b3fc4"/></linearGradient></defs>';
+    names.forEach(function (n, i) {
+      var x = 6 + i * 58, op = 0.18 + i * 0.12;
+      if (i === 3) o += '<rect x="' + x + '" y="20" width="54" height="52" rx="6" fill="url(#vis)" stroke="var(--ink)" stroke-width="1.5"/>';
+      else o += '<rect x="' + x + '" y="20" width="54" height="52" rx="6" fill="var(--orange)" fill-opacity="' + op.toFixed(2) + '" stroke="var(--ink)" stroke-width="1.5"/>';
+      o += '<text class="cap" x="' + (x + 27) + '" y="' + (n[1] ? 43 : 50) + '" text-anchor="middle" style="fill:' + (i === 3 ? '#fff' : 'var(--ink)') + ';font-weight:700">' + n[0] + '</text>';
+      if (n[1]) o += '<text class="cap" x="' + (x + 27) + '" y="57" text-anchor="middle" style="fill:' + (i === 3 ? '#fff' : 'var(--ink)') + ';font-weight:700">' + n[1] + '</text>';
+    });
+    o += arrow(210, 92, 16, 92, 'r') + arrow(210, 92, 404, 92, 'f') +
+      '<text class="cap" x="8" y="114" text-anchor="start">longer wavelength</text><text class="cap" x="8" y="128" text-anchor="start">lower frequency</text><text class="cap" x="8" y="142" text-anchor="start">less energy</text>' +
+      '<text class="cap" x="412" y="114" text-anchor="end">shorter wavelength</text><text class="cap" x="412" y="128" text-anchor="end">higher frequency</text><text class="cap" x="412" y="142" text-anchor="end">more energy</text></svg>';
+    return o;
+  }
+  function anatomySvg() {
+    var tick = function (x) { return '<line x1="' + x + '" y1="14" x2="' + x + '" y2="30" stroke="var(--ink)" stroke-width="2"/>'; };
+    return '<svg viewBox="0 0 400 176" role="img" aria-label="A transverse wave. The wavelength is marked from one crest to the next crest. The amplitude is marked above the resting point, from the resting point up to a crest, and below it, from the resting point down to a trough. Frequency, the number of waves that pass a point each second, is labeled along the bottom." focusable="false">' +
+      '<line class="rest" x1="6" y1="80" x2="394" y2="80"/>' + wave(70, 80, 34, 100, 3) +
+      dot(95, 46) + dot(195, 46) + dot(295, 46) + dot(145, 114) + dot(245, 114) + dot(345, 114) +
+      tick(195) + tick(295) + arrow(245, 22, 198, 22, 'n') + arrow(245, 22, 292, 22, 'n') + t(245, 11, 'wavelength') + t(195, 40, 'crest') +
+      arrow(95, 80, 95, 51, 'f') + t(86, 34, 'amplitude', 'end') +
+      arrow(145, 80, 145, 109, 'f') + t(145, 136, 'amplitude') + t(245, 136, 'trough') +
+      '<text class="cap" x="8" y="96" text-anchor="start">resting point</text>' +
+      arrow(20, 152, 380, 152, 'n') + t(200, 170, 'frequency: how many waves pass a point each second (Hz)') + '</svg>';
+  }
+  function bundleSvg(a) { return a; }
+
+  /* ---------- flash card data ---------- */
+  var CARDS = [
+    { id: 'wave', term: 'Wave', tag: '8.8A', def: 'A disturbance that transfers energy from one place to another without carrying matter along with it.',
+      cap: ['A wave carries energy, not matter'], art: std() + arrow(20, 22, 196, 22, 'f') + t(108, 14, 'energy travels', 'middle', 'cap') },
+    { id: 'medium', term: 'Medium', tag: '8.8A', def: 'The matter that a wave travels through, such as a rope, water or air. Electromagnetic waves do not need a medium.',
+      cap: ['The rope is the medium'], art: rest(72) + wave(14, 72, 24, 64, 3) + t(108, 24, 'the rope is the medium', 'middle', 'cap') },
+    { id: 'transverse', term: 'Transverse wave', tag: '8.8A', def: 'A wave in which particles move perpendicular (at a right angle) to the direction the wave travels.',
+      cap: ['The wave moves right.', 'The rope moves up and down.'], art: transQ() },
+    { id: 'mech', term: 'Mechanical wave', tag: '8.8A', def: 'A wave that needs a medium (matter) to travel through. Sound, water waves and waves on a rope are mechanical waves. They cannot travel through empty space.',
+      cap: ['Needs a medium to travel'], art: rest(72) + wave(14, 72, 24, 64, 3) + t(108, 24, 'rope = medium', 'middle', 'cap') + t(108, 118, 'a mechanical wave needs matter', 'middle', 'cap') },
+    { id: 'perp', term: 'Perpendicular', tag: '8.8A', def: 'At a right angle (90°) to something. In a transverse wave, the particles move perpendicular to the direction the wave travels.',
+      cap: ['Wave goes right,', 'rope moves up and down'], art: transQ() },
+    { id: 'energy', term: 'Energy transfer in a wave', tag: '8.8A', def: 'A wave moves energy from place to place, but it does not move matter. Each particle only moves back and forth around its resting point.',
+      cap: ['Energy moves along. The matter stays.'], art: rest(72) + wave(14, 72, 24, 64, 3) + arrow(20, 22, 196, 22, 'f') + t(108, 14, 'energy moves', 'middle', 'cap') + dot(62, 96) + t(108, 124, 'the dot only bobs up and down', 'middle', 'cap') },
+    { id: 'crest', term: 'Crest', tag: '8.8A', def: 'The highest point of a transverse wave, above the resting point.',
+      cap: ['A crest is the top of a wave'], art: std() + dot(30, 44) + dot(94, 44) + dot(158, 44) + t(94, 30, 'crest') },
+    { id: 'trough', term: 'Trough', tag: '8.8A', def: 'The lowest point of a transverse wave, below the resting point.',
+      cap: ['A trough is the bottom of a wave'], art: std() + dot(62, 100) + dot(126, 100) + dot(190, 100) + t(126, 118, 'trough') },
+    { id: 'amp', term: 'Amplitude', tag: '8.8A', def: 'The distance from the resting point to a crest (or to a trough). A bigger amplitude means the wave carries more energy.',
+      cap: ['Amplitude: resting point to crest'], art: std() + arrow(94, 72, 94, 46, 'f') + t(94, 34, 'amplitude') },
+    { id: 'wl', term: 'Wavelength', tag: '8.8A', def: 'The distance from one point on a wave to the same point on the next wave, such as crest to crest. It is measured in meters (m).',
+      cap: ['Wavelength: crest to crest'], art: std() + arrow(126, 26, 96, 26, 'f') + arrow(126, 26, 156, 26, 'f') + t(126, 18, 'wavelength') },
+    { id: 'freq', term: 'Frequency', tag: '8.8A', def: 'The number of complete waves that pass a point each second. It is measured in hertz (Hz).',
+      cap: ['3 waves in 1 second = 3 Hz'], art: rest(60) + wave(14, 60, 22, 64, 3) + dot(14, 60) + t(108, 112, '3 waves pass in 1 second', 'middle', 'cap') + t(108, 126, '= 3 Hz', 'middle', 'lbl') },
+    { id: 'hz', term: 'Hertz (Hz)', tag: '8.8A', def: 'The unit of frequency. One hertz is one wave per second.',
+      cap: ['1 Hz = 1 wave per second'], art: '<text class="big" x="110" y="52" text-anchor="middle">1 Hz</text>' + t(110, 74, '= 1 wave per second') + rest(100, 60, 160) + wave(60, 100, 14, 100, 1) },
+    { id: 'em', term: 'Electromagnetic wave', tag: '8.8A', def: 'A transverse wave of vibrating electric and magnetic fields. It carries energy through empty space and travels at the speed of light.',
+      cap: ['No medium needed'], art: '<circle class="hl" cx="26" cy="67" r="14"/>' + t(26, 96, 'Sun', 'middle', 'cap') + wave(54, 67, 16, 40, 4) + t(134, 34, 'travels through space', 'middle', 'cap') },
+    { id: 'spec', term: 'Electromagnetic spectrum', tag: '8.8A', def: 'The full range of electromagnetic waves arranged by wavelength and frequency: radio, microwave, infrared, visible, ultraviolet, X-ray and gamma ray.',
+      cap: ['Radio · Microwave · Infrared · Visible', 'Ultraviolet · X-ray · Gamma ray'],
+      art: [0, 1, 2, 3, 4, 5, 6].map(function (i) { return '<rect x="' + (6 + i * 30) + '" y="40" width="28" height="40" rx="4" fill="var(--orange)" fill-opacity="' + (0.2 + i * 0.13).toFixed(2) + '" stroke="var(--ink)" stroke-width="1.5"/>' + t(20 + i * 30, 65, 'RMIVUXG'.charAt(i)); }).join('') + arrow(10, 100, 210, 100, 'f') },
+    { id: 'radio', term: 'Radio waves', tag: '8.8A', def: 'Electromagnetic waves with the longest wavelengths and lowest frequencies. They carry radio, TV and Wi-Fi signals.',
+      cap: ['Longest wavelength, lowest frequency'], art: rest(67) + wave(14, 67, 22, 96, 2) + t(110, 118, 'very long waves', 'middle', 'cap') },
+    { id: 'ir', term: 'Infrared waves', tag: '8.8A', def: 'Electromagnetic waves with a longer wavelength than visible light. We feel them as heat. TV remotes and heat lamps use them.',
+      cap: ['Longer than visible light, felt as heat'], art: rest(67) + wave(14, 67, 22, 48, 4) + t(110, 118, 'we feel infrared as heat', 'middle', 'cap') },
+    { id: 'vis', term: 'Visible light', tag: '8.8A', def: 'The small part of the spectrum that our eyes can see. Red has the longest wavelength and violet has the shortest.',
+      cap: ['Red = longest, violet = shortest'], art: '<defs><linearGradient id="cv" x1="0" x2="1"><stop offset="0" stop-color="#d93025"/><stop offset=".25" stop-color="#f4b400"/><stop offset=".5" stop-color="#34a853"/><stop offset=".75" stop-color="#1a73e8"/><stop offset="1" stop-color="#7b3fc4"/></linearGradient></defs><rect x="20" y="46" width="180" height="34" rx="6" fill="url(#cv)" stroke="var(--ink)" stroke-width="2"/>' + t(36, 100, 'red', 'middle', 'cap') + t(184, 100, 'violet', 'middle', 'cap') },
+    { id: 'gamma', term: 'Gamma rays', tag: '8.8A', def: 'Electromagnetic waves with the shortest wavelength, the highest frequency and the most energy.',
+      cap: ['Shortest wavelength, most energy'], art: rest(67) + wave(14, 67, 22, 8, 24) + t(110, 118, 'very short waves, very high energy', 'middle', 'cap') },
+    { id: 'therapy', term: 'Radiation therapy', tag: '8.8B', def: 'A medical treatment that aims a beam of high-energy X-rays or gamma rays at a tumor to destroy cancer cells.',
+      cap: ['High-energy beam aimed at a tumor'], art: artTherapy(true) },
+    { id: 'wireless', term: 'Wireless technology', tag: '8.8B', def: 'Devices such as phones, Wi-Fi and radios that send information with radio waves and microwaves instead of wires.',
+      cap: ['Radio waves and microwaves carry the signal'], art: artWireless() },
+    { id: 'fiber', term: 'Fiber optics', tag: '8.8B', def: 'Thin strands of glass that carry data as pulses of light. The light bounces along inside the glass.',
+      cap: ['Light carries data through glass'], art: artFiber() },
+    { id: 'micro', term: 'Microwaves (use)', tag: '8.8B', def: 'Microwave ovens use microwaves that are absorbed by water in food. The water molecules vibrate and the food gets warm.',
+      cap: ['Water in food absorbs the energy'], art: artMicro() },
+    { id: 'uv', term: 'Ultraviolet sterilization', tag: '8.8B', def: 'Using ultraviolet light to damage the DNA of germs so they cannot reproduce. It is used on tools, air and water.',
+      cap: ['UV light damages germs'], art: artUV() },
+    { id: 'xray', term: 'X-rays', tag: '8.8B', def: 'High-energy waves that pass through soft tissue but are absorbed by bone. Detectors record the shadow to make medical images.',
+      cap: ['Bones absorb more X-rays than soft tissue'], art: artXray() },
+    { id: 'astro', term: 'Astronomical observations', tag: '8.8B', def: 'Studying space with telescopes that detect different electromagnetic waves, such as radio, infrared, visible and X-rays. Each type shows different details.',
+      cap: ['Telescopes detect waves from stars'], art: artAstro() }
+  ];
+
+  /* ---------- name the parts of a wave ---------- */
+  var PART_DESC = {
+    'crest': 'the highest point of the wave',
+    'trough': 'the lowest point of the wave',
+    'amplitude': 'the distance from the resting point to a crest or to a trough',
+    'wavelength': 'the distance from one crest to the next crest',
+    'resting point': 'the middle line where the rope would sit with no wave',
+    'frequency': 'the number of waves that pass a point each second'
+  };
+  var PART_OPTS = ['amplitude', 'crest', 'frequency', 'resting point', 'trough', 'wavelength'];
+  function badge(x, y, n) { return '<circle cx="' + x + '" cy="' + y + '" r="10" fill="var(--ink)"/><text x="' + x + '" y="' + (y + 4.5) + '" text-anchor="middle" style="fill:var(--surface);font:700 13px var(--mono)">' + n + '</text>'; }
+  function partsSvg(nm) {
+    return '<svg viewBox="0 0 400 150" role="img" aria-label="A transverse wave with five numbered parts: a crest, a trough, a wavelength arrow, an amplitude arrow and the resting point." focusable="false">' +
+      '<line class="rest" x1="6" y1="80" x2="394" y2="80"/>' + wave(70, 80, 34, 100, 3) +
+      dot(95, 46) + badge(95, 28, nm.crest) + dot(145, 114) + badge(145, 134, nm.trough) +
+      arrow(245, 24, 198, 24, 'f') + arrow(245, 24, 292, 24, 'f') + badge(245, 9, nm.wavelength) +
+      arrow(345, 82, 345, 112, 'f') + badge(345, 134, nm.amplitude) +
+      badge(26, 80, nm['resting point']) + '</svg>';
+  }
+  function partsQ(nm, intro) {
+    var byNum = {}; Object.keys(nm).forEach(function (k) { byNum[nm[k]] = k; });
+    return { q: intro, dds: { svg: function () { return partsSvg(nm); }, parts: [1, 2, 3, 4, 5].map(function (n) {
+      var ans = byNum[n], wrong = {};
+      PART_OPTS.forEach(function (o) { if (o !== ans) wrong[o] = 'Not quite. The ' + o + ' is ' + PART_DESC[o] + '. Look again at where part ' + n + ' is on the wave.'; });
+      return { label: 'What is part ' + n + '?', opts: PART_OPTS, ans: ans, wrong: wrong, why: 'Part ' + n + ' is the ' + ans + ': ' + PART_DESC[ans] + '.' };
+    }) }, c: 'All five parts named correctly', why: 'Crest and trough are the top and bottom. Amplitude is measured from the resting point. Wavelength is crest to crest.' };
+  }
+
+  function ddp(label, opts, ans, why, wrongTxt) {
+    var wrong = {}; opts.forEach(function (o) { if (o !== ans) wrong[o] = wrongTxt; });
+    return { label: label, opts: opts, ans: ans, why: why, wrong: wrong };
+  }
+  function twoWaveSvg() {
+    return '<svg viewBox="0 0 400 200" role="img" aria-label="Two transverse waves drawn over one second. Wave A is taller and Wave B is shorter. Both have three complete waves." focusable="false">' +
+      '<text class="lbl" x="6" y="14">Wave A</text><line class="rest" x1="6" y1="56" x2="394" y2="56"/>' + wave(50, 56, 30, 100, 3) +
+      '<text class="lbl" x="6" y="108">Wave B</text><line class="rest" x1="6" y1="148" x2="394" y2="148"/>' + wave(50, 148, 14, 100, 3) +
+      arrow(50, 184, 350, 184, 'n') + t(200, 198, 'one second', 'middle', 'cap') + '</svg>';
+  }
+  var FREQ_TABLE = '<table><thead><tr><th>Wave</th><th>Approximate frequency (Hz)</th></tr></thead><tbody>' +
+    '<tr><td>Radio waves</td><td>10<sup>4</sup> to 10<sup>9</sup></td></tr><tr><td>Microwaves</td><td>10<sup>9</sup> to 10<sup>12</sup></td></tr>' +
+    '<tr><td>Infrared</td><td>10<sup>12</sup> to 4 × 10<sup>14</sup></td></tr><tr><td>Visible light</td><td>4 × 10<sup>14</sup> to 8 × 10<sup>14</sup></td></tr>' +
+    '<tr><td>Ultraviolet</td><td>8 × 10<sup>14</sup> to 10<sup>17</sup></td></tr><tr><td>X-rays</td><td>10<sup>17</sup> to 10<sup>19</sup></td></tr>' +
+    '<tr><td>Gamma rays</td><td>above 10<sup>19</sup></td></tr></tbody></table>';
+  var QUIZ = [
+    partsQ({ crest: 1, trough: 2, wavelength: 3, amplitude: 4, 'resting point': 5 }, 'Name the parts of the wave. Each number marks one part of the transverse wave. Choose the correct name for each number.'),
+    partsQ({ 'resting point': 1, wavelength: 2, trough: 3, crest: 4, amplitude: 5 }, 'Practice naming the parts of a wave again. This time the numbers are in a different order. Choose the correct name for each number.'),
+    { q: 'The diagram shows a transverse wave on a rope. Which arrow shows the wavelength?', art: waveQ(),
+      c: 'Arrow B', why: 'Wavelength is the distance from one crest to the next crest. Arrow B spans exactly one full wave.',
+      w: [{ t: 'Arrow A', why: 'Arrow A goes from the resting point up to a crest. That is the amplitude, not the wavelength.' },
+          { t: 'Arrow C', why: 'Arrow C goes from a trough up to the height of a crest. That is twice the amplitude, not a distance along the wave.' },
+          { t: 'Arrow D', why: 'Arrow D goes from a crest to the next trough. That is only half of a wavelength.' }] },
+    { q: 'Look at the same transverse wave. Which arrow shows the amplitude?', art: waveQ(),
+      c: 'Arrow A', why: 'Amplitude is the distance from the resting point to a crest (or to a trough). Arrow A shows that distance.',
+      w: [{ t: 'Arrow B', why: 'Arrow B goes from crest to crest. That is the wavelength.' },
+          { t: 'Arrow C', why: 'Arrow C goes all the way from trough to crest. The amplitude is only half of that, measured from the resting point.' },
+          { t: 'Arrow D', why: 'Arrow D goes from a crest to a trough along the wave. That is half a wavelength, not an amplitude.' }] },
+    { q: 'A student shakes one end of a rope. Five complete waves pass a mark on the rope every second. What is the frequency of the wave?',
+      c: '5 Hz', why: 'Frequency is the number of waves that pass a point each second. Five waves per second is 5 hertz.',
+      w: [{ t: '5 m', why: 'Meters measure distance, like wavelength. Frequency counts waves per second, so the unit is hertz.' },
+          { t: '0.2 Hz', why: 'The number 0.2 is 1 ÷ 5. That is the time in seconds for one wave, not the number of waves each second.' },
+          { t: '5 seconds', why: 'Frequency is not measured in seconds. It is waves per second, written in hertz (Hz).' }] },
+    { q: 'The table shows four transverse waves that all travel at the same speed. Which wave has the shortest wavelength?',
+      table: '<table><thead><tr><th>Wave</th><th>Frequency</th></tr></thead><tbody><tr><td>Wave P</td><td>2 Hz</td></tr><tr><td>Wave Q</td><td>8 Hz</td></tr><tr><td>Wave R</td><td>5 Hz</td></tr><tr><td>Wave S</td><td>3 Hz</td></tr></tbody></table>',
+      c: 'Wave Q', why: 'When waves travel at the same speed, a higher frequency means a shorter wavelength. Wave Q has the highest frequency, 8 Hz.',
+      w: [{ t: 'Wave P', why: 'Wave P has the lowest frequency, 2 Hz, so it has the longest wavelength.' },
+          { t: 'Wave R', why: 'Wave R has 5 Hz. Wave Q has a higher frequency, so Q has the shorter wavelength.' },
+          { t: 'Wave S', why: 'Wave S has 3 Hz. Wave Q has a higher frequency, so Q has the shorter wavelength.' }] },
+    { q: 'Which list shows electromagnetic waves in order from the longest wavelength to the shortest wavelength?',
+      c: 'Radio waves, infrared, visible light, ultraviolet, X-rays', why: 'Radio waves have the longest wavelengths. Wavelengths get shorter through infrared, visible light and ultraviolet, and X-rays are shorter still.',
+      w: [{ t: 'X-rays, ultraviolet, visible light, infrared, radio waves', why: 'This list is backward. It goes from the shortest wavelength to the longest.' },
+          { t: 'Radio waves, ultraviolet, visible light, infrared, X-rays', why: 'Infrared and ultraviolet are swapped. Infrared has a longer wavelength than visible light, and ultraviolet has a shorter one.' },
+          { t: 'Infrared, radio waves, X-rays, visible light, ultraviolet', why: 'This list is mixed up. Radio waves have the longest wavelengths, and X-rays are shorter than ultraviolet.' }] },
+    { q: 'Look at the diagram of the electromagnetic spectrum. A scientist compares microwaves with X-rays. Which statement is correct?', art: specSvg(),
+      c: 'X-rays have a shorter wavelength and a higher frequency than microwaves.', why: 'Moving from microwaves toward X-rays, the wavelength gets shorter and the frequency gets higher.',
+      w: [{ t: 'X-rays have a longer wavelength and a higher frequency than microwaves.', why: 'A higher frequency goes with a shorter wavelength, not a longer one.' },
+          { t: 'X-rays have a shorter wavelength and a lower frequency than microwaves.', why: 'A shorter wavelength goes with a higher frequency, not a lower one.' },
+          { t: 'X-rays and microwaves have the same frequency, but X-rays travel faster.', why: 'They have very different frequencies. In empty space, all electromagnetic waves travel at the same speed.' }] },
+    { q: 'Look at the diagram of the electromagnetic spectrum. Which type of wave has the highest frequency?', art: specSvg(),
+      c: 'Gamma rays', why: 'Frequency gets higher toward the right end of the spectrum. Gamma rays are at the far right, so they have the highest frequency and the most energy.',
+      w: [{ t: 'Radio waves', why: 'Radio waves are at the left end, where the frequency is the lowest.' },
+          { t: 'Infrared waves', why: 'Infrared waves are left of visible light, so their frequency is lower than visible light.' },
+          { t: 'Visible light', why: 'Visible light is in the middle. Ultraviolet waves, X-rays and gamma rays all have higher frequencies.' }] },
+    { q: 'Which type of electromagnetic wave has a longer wavelength than visible light?',
+      c: 'Infrared waves', why: 'Infrared waves are next to red light on the long-wavelength side of the spectrum. Their wavelength is longer than visible light.',
+      w: [{ t: 'Ultraviolet waves', why: 'Ultraviolet waves are on the short-wavelength side of visible light.' },
+          { t: 'X-rays', why: 'X-rays have a much shorter wavelength than visible light.' },
+          { t: 'Gamma rays', why: 'Gamma rays have the shortest wavelengths of all electromagnetic waves.' }] },
+    { q: 'What is a mechanical wave?',
+      c: 'A wave that needs a medium to travel through', why: 'Mechanical waves, such as sound and waves on a rope, are made by vibrating matter. They need a medium to move through.',
+      w: [{ t: 'A wave that can travel through empty space', why: 'Waves that can cross empty space are electromagnetic waves, not mechanical waves.' },
+          { t: 'A wave made only by machines', why: 'The word mechanical here means the wave needs matter to travel through. A rope or the air can carry one, no machine needed.' },
+          { t: 'A wave that always moves at the speed of light', why: 'Only electromagnetic waves travel at the speed of light in empty space. Mechanical waves are much slower.' }] },
+    { q: 'Which of these is a mechanical wave?',
+      c: 'Ripples spreading across a pond', why: 'Ripples are made by moving water, so they need a medium to travel through. That makes them a mechanical wave.',
+      w: [{ t: 'Light from the Sun', why: 'Light is an electromagnetic wave. It can cross empty space, so it does not need a medium.' },
+          { t: 'X-rays used by a dentist', why: 'X-rays are electromagnetic waves. They do not need a medium.' },
+          { t: 'Radio signals from a tower', why: 'Radio waves are electromagnetic waves. They can travel through empty space.' }] },
+    { q: 'Which statement correctly describes a transverse wave?',
+      c: 'The particles of the medium move perpendicular to the direction the wave travels.', why: 'In a transverse wave, the medium moves up and down while the wave travels sideways. The two motions are perpendicular, at a right angle.',
+      w: [{ t: 'The particles of the medium move in the same direction the wave travels.', why: 'Motion in the same direction as the wave is not perpendicular. In a transverse wave the particles move at a right angle to the wave.' },
+          { t: 'The particles of the medium travel along with the wave to the end.', why: 'The particles only move back and forth around their resting points. A wave moves energy, not matter.' },
+          { t: 'The wave has no crests or troughs.', why: 'Crests and troughs are the high and low points that a transverse wave always has.' }] },
+    { q: 'Which of these is an example of a transverse wave?',
+      c: 'A wave on a shaken rope', why: 'The rope moves up and down while the wave travels along it. The two motions are perpendicular, so it is a transverse wave.',
+      w: [{ t: 'Sound traveling through air', why: 'The air particles move back and forth in the same direction the sound travels, not perpendicular to it. Sound is not a transverse wave.' },
+          { t: 'A ball rolling across a floor', why: 'A rolling ball is matter that moves from place to place. A wave moves energy without carrying matter along.' },
+          { t: 'A truck driving down a road', why: 'A moving truck is not a wave. A wave transfers energy without carrying matter along.' }] },
+    { q: 'A cork floats on a pond. A wave passes by. What happens to the cork?',
+      c: 'It moves up and down in about the same spot as the energy passes.', why: 'A wave moves energy, not matter. The water and the cork only move up and down around their resting points.',
+      w: [{ t: 'It is carried along with the wave to the shore.', why: 'The wave does not carry the water or the cork along. Only the energy travels.' },
+          { t: 'It moves faster than the wave.', why: 'The cork just bobs up and down. It does not travel along with the wave at all.' },
+          { t: 'It does not move at all.', why: 'The wave’s energy passes through the cork, so it does move up and down.' }] },
+    { q: 'At a football game, fans stand up and sit down in order, and a wave seems to travel around the stadium. What actually moves around the stadium?',
+      c: 'The energy and the pattern of the wave', why: 'Each fan only moves up and down in the same seat. The wave carries energy around the stadium, but the fans (matter) stay in their seats.',
+      w: [{ t: 'The fans themselves', why: 'The fans stay in their own seats. Only the wave pattern moves around the stadium.' },
+          { t: 'The seats', why: 'The seats do not move. Matter does not travel along with a wave.' },
+          { t: 'Nothing moves', why: 'The wave pattern, and the energy it carries, does move around the stadium.' }] },
+    { q: 'A scientist needs to detect electromagnetic waves with wavelengths shorter than visible light but longer than X-rays. Which type of electromagnetic wave should the instrument detect?', art: specSvg(),
+      c: 'Ultraviolet waves', why: 'Ultraviolet waves sit between visible light and X-rays on the spectrum, so their wavelengths are shorter than visible light and longer than X-rays.',
+      w: [{ t: 'Radio waves', why: 'Radio waves have the longest wavelengths, much longer than visible light.' },
+          { t: 'Infrared waves', why: 'Infrared waves have wavelengths longer than visible light, not shorter.' },
+          { t: 'Gamma rays', why: 'Gamma rays have wavelengths even shorter than X-rays.' }] },
+    { q: 'A student produces two transverse waves on the same rope. Both waves have a frequency of 4 Hz, but Wave X has a greater amplitude than Wave Y. Which TWO statements are supported by this information?',
+      multi: { pick: 2, opts: [
+        { t: 'Wave X completes more vibrations each second.', ok: false, why: 'Both waves have a frequency of 4 Hz, so they complete the same number of vibrations each second.' },
+        { t: 'Wave Y has crests farther from the resting point.', ok: false, why: 'Wave X has the greater amplitude, so Wave X has the crests farther from the resting point.' },
+        { t: 'Wave Y transfers more energy than Wave X.', ok: false, why: 'A greater amplitude means more energy. Wave X has the greater amplitude.' },
+        { t: 'Wave X has crests farther from the resting point.', ok: true, why: 'Amplitude is the distance from the resting point to a crest. Wave X has the greater amplitude.' },
+        { t: 'Wave X transfers more energy than Wave Y.', ok: true, why: 'A greater amplitude means the wave transfers more energy.' }] },
+      c: 'Wave X has crests farther from the resting point and transfers more energy.', why: 'Greater amplitude means crests farther from the resting point and more energy. The frequency is the same for both waves.' },
+    { q: 'Two transverse waves travel along identical ropes at the same speed. A student records the observations in the table. Which statement correctly compares the waves?',
+      table: '<table><thead><tr><th>Wave characteristic</th><th>Wave R</th><th>Wave S</th></tr></thead><tbody><tr><td>Distance from resting point to crest</td><td>3 cm</td><td>6 cm</td></tr><tr><td>Complete waves passing a point in 1 second</td><td>5</td><td>5</td></tr></tbody></table>',
+      c: 'Wave S has a greater amplitude, but both waves have the same frequency.', why: 'The distance from the resting point to a crest is the amplitude, so Wave S has the greater amplitude. Both waves have 5 waves per second, so their frequencies are the same.',
+      w: [{ t: 'Wave R has a higher frequency because its crests are shorter.', why: 'Frequency is the number of waves per second, not the height of the crests. Both waves have 5 waves per second.' },
+          { t: 'Wave S has a longer wavelength because its amplitude is greater.', why: 'Amplitude and wavelength are different. Both waves have the same frequency and speed, so they have the same wavelength.' },
+          { t: 'Wave R has a smaller amplitude and a lower frequency.', why: 'Wave R does have the smaller amplitude, but its frequency is the same as Wave S: 5 waves per second.' }] },
+    { q: 'The diagram shows the electromagnetic spectrum. Which statement BEST compares the energy of the waves?', art: specSvg(),
+      c: 'Waves with shorter wavelengths and higher frequencies carry more energy.', why: 'Energy increases toward the gamma-ray end of the spectrum, where wavelengths are shortest and frequencies are highest.',
+      w: [{ t: 'Waves with longer wavelengths and lower frequencies carry more energy.', why: 'It is the other way around. Long wavelengths and low frequencies go with less energy.' },
+          { t: 'Waves with equal wavelengths and frequencies carry no energy.', why: 'All waves carry energy. Also, waves on the spectrum have different wavelengths and frequencies.' },
+          { t: 'Waves with longer wavelengths and higher frequencies carry no energy.', why: 'Longer wavelengths go with lower frequencies, not higher ones. And every wave carries some energy.' }] },
+    { q: 'The table shows approximate wavelengths for four colors of visible light. Which color has the highest frequency?',
+      table: '<table><thead><tr><th>Color</th><th>Wavelength (nm)</th></tr></thead><tbody><tr><td>Red</td><td>700</td></tr><tr><td>Yellow</td><td>580</td></tr><tr><td>Blue</td><td>470</td></tr><tr><td>Violet</td><td>410</td></tr></tbody></table>',
+      c: 'Violet', why: 'The shorter the wavelength, the higher the frequency. Violet has the shortest wavelength, 410 nm, so it has the highest frequency.',
+      w: [{ t: 'Red', why: 'Red has the longest wavelength, so it has the lowest frequency.' },
+          { t: 'Yellow', why: 'Yellow has a longer wavelength than blue and violet, so its frequency is lower.' },
+          { t: 'Blue', why: 'Blue has a longer wavelength than violet, so its frequency is lower than violet.' }] },
+    { q: 'Complete the sentence. Electromagnetic waves are arranged on the electromagnetic spectrum by their…',
+      dds: { parts: [ddp('Electromagnetic waves are arranged by their', ['color only', 'mass', 'temperature', 'wavelength and frequency'], 'wavelength and frequency', 'The spectrum is ordered by wavelength and frequency, from radio waves to gamma rays.', 'The spectrum is not arranged this way. It is ordered by wavelength and frequency.')] },
+      c: 'wavelength and frequency', why: 'The spectrum is ordered by wavelength and frequency.' },
+    { q: 'Compare radio waves and X-rays on the spectrum. How do their wavelengths and energy affect how they can be used? Select TWO answers.',
+      multi: { pick: 2, opts: [
+        { t: 'Radio waves have longer wavelengths and less energy, so they are safe to use for communication.', ok: true, why: 'Radio waves carry little energy per wave, so they are used for radio, TV and wireless signals.' },
+        { t: 'Radio waves have shorter wavelengths and more energy, so they are safe to use for communication.', ok: false, why: 'Radio waves have the longest wavelengths and the least energy, not shorter wavelengths and more energy.' },
+        { t: 'X-rays have shorter wavelengths and more energy, so they can be harmful if not used carefully.', ok: true, why: 'X-rays carry a lot of energy, so too much exposure can damage cells.' },
+        { t: 'X-rays have shorter wavelengths and less energy, so they can be harmful if not used carefully.', ok: false, why: 'X-rays have more energy, not less. That is why they can be harmful.' }] },
+      c: 'Radio waves have longer wavelengths and less energy. X-rays have shorter wavelengths and more energy.', why: 'Longer wavelength means less energy and safer uses such as communication. Shorter wavelength means more energy and more care is needed.' },
+    { q: 'A detector picks up electromagnetic waves with a frequency of about 10 billion hertz. Use the table. What type of wave is it?', table: FREQ_TABLE,
+      c: 'Microwaves', why: '10 billion Hz is between 10⁹ and 10¹² Hz, which is the range for microwaves.',
+      w: [{ t: 'Radio waves', why: 'Radio waves go up to about 10⁹ Hz. 10 billion Hz is higher than that.' },
+          { t: 'Infrared', why: 'Infrared starts at about 10¹² Hz. 10 billion Hz is lower than that.' },
+          { t: 'X-rays', why: 'X-rays are above 10¹⁷ Hz, much higher than 10 billion Hz.' }] },
+    { q: 'The heat you feel from a campfire is made of electromagnetic waves with a frequency of about 10 trillion Hz. Use the table. What type of wave is this?', table: FREQ_TABLE,
+      c: 'Infrared', why: '10 trillion Hz is between 10¹² and 4 × 10¹⁴ Hz, which is the infrared range. We feel infrared waves as heat.',
+      w: [{ t: 'Microwaves', why: 'Microwaves are from 10⁹ to 10¹² Hz. 10 trillion Hz is higher.' },
+          { t: 'Visible light', why: 'Visible light starts at about 4 × 10¹⁴ Hz. 10 trillion Hz is lower.' },
+          { t: 'Ultraviolet', why: 'Ultraviolet starts at about 8 × 10¹⁴ Hz, which is far higher than 10 trillion Hz.' }] },
+    { q: 'Compare the models of Wave A and Wave B, each shown for one second. Choose how the waves compare.',
+      dds: { svg: twoWaveSvg, parts: [
+        ddp('Which wave has the greater amplitude?', ['Wave A', 'Wave B', 'They are equal'], 'Wave A', 'Wave A is taller. Its crests are farther from the resting point.', 'Look at how far the crests are from the resting point. Wave A is taller than Wave B.'),
+        ddp('Which wave carries more energy?', ['Wave A', 'Wave B', 'They are equal'], 'Wave A', 'The waves have the same frequency, so the wave with the greater amplitude carries more energy.', 'The waves have the same frequency, so the wave with the greater amplitude carries more energy. That is Wave A.'),
+        ddp('Which wave has the greater frequency?', ['Wave A', 'Wave B', 'They are equal'], 'They are equal', 'Both waves have 3 complete waves in one second, so the frequencies are equal.', 'Count the complete waves in one second. Both waves have 3, so the frequencies are equal.')] },
+      c: 'A has more energy and amplitude; frequencies are equal', why: 'Amplitude is how tall the wave is. Frequency is the number of waves per second.' },
+    { q: 'Hospitals use a certain kind of electromagnetic wave to sterilize medical equipment by destroying bacteria and other microorganisms. Complete the sentence.',
+      dds: { parts: [ddp('Hospitals use ___ to sterilize medical equipment.', ['radio waves', 'infrared waves', 'microwaves', 'ultraviolet light'], 'ultraviolet light', 'Ultraviolet light has enough energy to damage the DNA of germs.', 'This type of wave does not carry enough energy for sterilizing. Ultraviolet light does.')] },
+      c: 'ultraviolet light', why: 'Ultraviolet light has enough energy to damage the DNA of germs.' },
+    { q: 'Two transverse waves travel through the same medium at the same speed. Wave A has three times the frequency of Wave B. Which comparison is correct?',
+      c: 'Wave A has a shorter wavelength than Wave B.', why: 'At the same speed, a higher frequency means a shorter wavelength. Wave A has the higher frequency, so its wavelength is shorter.',
+      w: [{ t: 'Wave A has a longer wavelength than Wave B.', why: 'Higher frequency goes with a shorter wavelength, not a longer one.' },
+          { t: 'Wave A and Wave B have the same wavelength because they move at the same speed.', why: 'The same speed does not mean the same wavelength. If the frequency changes, the wavelength changes in the opposite direction.' },
+          { t: 'Wave B has a shorter wavelength than Wave A.', why: 'Wave B has the lower frequency, so it has the longer wavelength.' }] },
+    { q: 'A large dish on a hilltop is used to receive long-wavelength waves from space and from broadcast towers. What part of the electromagnetic spectrum does it detect?', art: artAstro(false),
+      c: 'Radio waves', why: 'Radio waves have the longest wavelengths. Dish antennas collect them for communication and for radio telescopes.',
+      w: [{ t: 'Infrared', why: 'Infrared waves are much shorter than radio waves and are felt as heat.' },
+          { t: 'Visible light', why: 'Visible light has a short wavelength. The question describes long-wavelength waves.' },
+          { t: 'X-rays', why: 'X-rays have very short wavelengths, not long ones.' }] },
+    { q: 'Which type of electromagnetic wave from the Sun causes sunburn, and is the reason people wear sunscreen?',
+      c: 'Ultraviolet', why: 'Ultraviolet waves carry enough energy to damage skin cells. Sunscreen helps block them.',
+      w: [{ t: 'Infrared', why: 'We feel infrared waves as heat. They do not cause sunburn.' },
+          { t: 'Microwaves', why: 'Microwaves from the Sun are very weak and are not what causes sunburn.' },
+          { t: 'Radio waves', why: 'Radio waves have too little energy to damage skin.' }] },
+    { q: 'Connect each description to the correct type of electromagnetic wave.',
+      dds: { parts: [
+        ddp('Long wavelength; used to carry music to a car radio', ['infrared', 'microwaves', 'radio waves', 'ultraviolet', 'X-rays'], 'radio waves', 'Radio waves have the longest wavelengths and carry radio, TV and wireless signals.', 'This wave type does not match the description. Radio waves have the longest wavelengths.'),
+        ddp('Absorbed by water in food, so it can heat a snack', ['infrared', 'microwaves', 'radio waves', 'ultraviolet', 'X-rays'], 'microwaves', 'Microwaves are absorbed by water molecules, which makes the food warm.', 'This wave type does not match the description. Microwaves are the ones water in food absorbs.'),
+        ddp('High frequency; passes through soft tissue but not dense bone', ['infrared', 'microwaves', 'radio waves', 'ultraviolet', 'X-rays'], 'X-rays', 'X-rays pass through soft tissue but are absorbed by dense bone, which makes medical images.', 'This wave type does not match the description. X-rays are the ones used for bone images.')] },
+      c: 'radio waves, microwaves, X-rays', why: 'Match each use to the part of the spectrum it comes from.' },
+    { q: 'Changes in wave characteristics cause other changes in a wave. Match each change to the result it could cause.',
+      dds: { parts: [
+        ddp('An increase in amplitude', ['The wave carries more energy', 'Fewer waves pass a point each second', 'The distance between crests gets longer'], 'The wave carries more energy', 'A greater amplitude means the wave transfers more energy.', 'Amplitude is how tall the wave is. It is linked to how much energy the wave carries.'),
+        ddp('A decrease in frequency', ['The wave carries more energy', 'Fewer waves pass a point each second', 'The distance between crests gets longer'], 'Fewer waves pass a point each second', 'Frequency is the number of waves that pass a point each second. A lower frequency means fewer waves.', 'Frequency is the number of waves that pass a point each second. If it goes down, fewer waves pass.'),
+        ddp('An increase in wavelength', ['The wave carries more energy', 'Fewer waves pass a point each second', 'The distance between crests gets longer'], 'The distance between crests gets longer', 'Wavelength is the distance from one crest to the next crest. A larger wavelength means the crests are farther apart.', 'Wavelength is the distance from one crest to the next. If it increases, the crests are farther apart.')] },
+      c: 'Amplitude: energy. Frequency: waves per second. Wavelength: crest distance.', why: 'Each wave characteristic is linked to one result.' },
+    { q: 'Look at the electromagnetic spectrum in the diagram. What is likely true about the wave on the far left side of the diagram? Select TWO answers.', art: specSvg(),
+      multi: { pick: 2, opts: [
+        { t: 'It has a long wavelength.', ok: true, why: 'The far left side of the spectrum is where radio waves are. They have the longest wavelengths.' },
+        { t: 'It has a short wavelength.', ok: false, why: 'Short wavelengths are on the far right side, toward gamma rays.' },
+        { t: 'It is a lower-energy wave.', ok: true, why: 'Long wavelengths and low frequencies go with less energy, so radio waves are low-energy waves.' },
+        { t: 'It is a higher-energy wave.', ok: false, why: 'Higher-energy waves are on the right side of the spectrum, such as X-rays and gamma rays.' }] },
+      c: 'Long wavelength and lower energy', why: 'The far left side of the spectrum has the longest wavelengths, the lowest frequencies and the least energy.' },
+    { q: 'Look at the electromagnetic spectrum in the diagram. What is likely true about the wave on the far right side of the diagram? Select TWO answers.', art: specSvg(),
+      multi: { pick: 2, opts: [
+        { t: 'It has a short wavelength.', ok: true, why: 'The far right side of the spectrum is where gamma rays are. They have the shortest wavelengths.' },
+        { t: 'It has a long wavelength.', ok: false, why: 'Long wavelengths are on the far left side, toward radio waves.' },
+        { t: 'It is a higher-energy wave.', ok: true, why: 'Short wavelengths and high frequencies go with more energy, so gamma rays are high-energy waves.' },
+        { t: 'It is a lower-energy wave.', ok: false, why: 'Lower-energy waves are on the left side of the spectrum, such as radio waves.' }] },
+      c: 'Short wavelength and higher energy', why: 'The far right side of the spectrum has the shortest wavelengths, the highest frequencies and the most energy.' },
+    { q: 'Why is it important that scientists can separate electromagnetic waves into different types by their frequencies?',
+      c: 'We can use different frequencies to study stars and planets in different ways.', why: 'Each type of wave shows different information. Radio waves, infrared, visible light and X-rays each reveal different things about space objects, and different types are also useful for communication and medicine.',
+      w: [{ t: 'We can use the same frequency to study everything in space the same way.', why: 'Different objects give off and absorb different waves, so one frequency cannot show everything.' },
+          { t: 'We can make all electromagnetic waves travel at different speeds.', why: 'In empty space, all electromagnetic waves travel at the same speed. Separating them by frequency does not change their speed.' },
+          { t: 'We can change visible light into sound so we can hear stars.', why: 'Sorting waves by frequency does not turn light into sound. It lets us choose the best type of wave for each job.' }] },
+    { q: 'A wave travels from left to right along a rope, as shown. The rope itself moves up and down. What kind of wave is this, and why?', art: transQ(),
+      c: 'A transverse wave, because the rope moves perpendicular to the direction the wave travels.', why: 'In a transverse wave, the particles of the medium move at right angles to the direction the wave moves.',
+      w: [{ t: 'A transverse wave, because the rope moves in the same direction the wave travels.', why: 'Motion in the same direction as the wave is not transverse. Here the rope moves up and down while the wave moves sideways.' },
+          { t: 'It is not a wave, because the rope moves up and down.', why: 'A wave is a disturbance that moves energy. A rope that moves up and down as the disturbance travels along it is exactly a wave.' },
+          { t: 'An electromagnetic wave, because it has a crest and a trough.', why: 'A wave on a rope needs the rope to travel through. Electromagnetic waves do not need a medium.' }] },
+    { q: 'A wave travels from one end of a long rope to the other end. What does the wave carry from one end to the other?',
+      c: 'Energy', why: 'A wave transfers energy. The pieces of the rope move up and down but stay in about the same place.',
+      w: [{ t: 'Pieces of the rope', why: 'The rope does not travel along with the wave. Each piece only moves up and down.' },
+          { t: 'Its wavelength', why: 'Wavelength is a property of the wave. It is not something the wave carries.' },
+          { t: 'Its frequency', why: 'Frequency is a property of the wave. It is not something the wave carries.' }] },
+    { q: 'Which statement about electromagnetic waves is true?',
+      c: 'They can travel through empty space.', why: 'Electromagnetic waves do not need a medium. Sunlight reaches Earth by crossing empty space.',
+      w: [{ t: 'They must travel through a medium such as air or water.', why: 'That is true for waves like sound, but not for electromagnetic waves. They travel through empty space.' },
+          { t: 'They all have the same wavelength and frequency.', why: 'Electromagnetic waves cover a huge range of wavelengths and frequencies, from radio waves to gamma rays.' },
+          { t: 'Only visible light is an electromagnetic wave.', why: 'Visible light is a small part of the spectrum. Radio waves, microwaves, ultraviolet, X-rays and gamma rays are electromagnetic waves too.' }] },
+    { q: 'A doctor aims a narrow beam at a tumor to destroy cancer cells while sparing healthy tissue. This is radiation therapy. Which waves does it use?', art: artTherapy(false),
+      c: 'High-energy waves such as X-rays or gamma rays', why: 'Radiation therapy needs high-frequency waves with a lot of energy. X-rays and gamma rays can damage cancer cells.',
+      w: [{ t: 'Low-energy radio waves', why: 'Radio waves carry far too little energy to destroy cells this way.' },
+          { t: 'Infrared waves like those from a heat lamp', why: 'Infrared mostly warms things. It does not carry enough energy to destroy cancer cells inside the body.' },
+          { t: 'Visible light from a flashlight', why: 'Visible light is stopped near the surface of the skin and does not have the energy needed to destroy cells.' }] },
+    { q: 'Your phone connects to a Wi-Fi router without any wires. Which electromagnetic waves carry the signal?', art: artWireless(),
+      c: 'Radio waves and microwaves', why: 'Wireless technologies such as Wi-Fi, Bluetooth and cell phones use radio waves and microwaves.',
+      w: [{ t: 'X-rays and gamma rays', why: 'These waves have very high energy and can harm living cells. They are not used to send signals to phones.' },
+          { t: 'Ultraviolet waves', why: 'Ultraviolet waves can harm skin and are not used for wireless data in homes.' },
+          { t: 'Sound waves', why: 'Sound waves are not electromagnetic waves, and they need a medium. Wi-Fi uses electromagnetic waves.' }] },
+    { q: 'An internet company sends data through thin glass cables called optical fibers. What carries the data?', art: artFiber(),
+      c: 'Pulses of light traveling inside the glass', why: 'Fiber optics send data as pulses of light. The light bounces along inside the glass strand.',
+      w: [{ t: 'Electric current flowing through the glass', why: 'Glass does not carry current like a copper wire. Fiber optics use light instead of electricity.' },
+          { t: 'Sound waves traveling through the glass', why: 'Sound waves are not electromagnetic waves. Fiber optics are about light waves.' },
+          { t: 'X-rays shot through the glass', why: 'X-rays are high-energy and are absorbed or pass through, so they are not guided along a fiber. Light is used.' }] },
+    { q: 'Why does a microwave oven heat food?', art: artMicro(),
+      c: 'Water molecules in the food absorb the microwaves, which makes them vibrate and warm up.', why: 'Water in food absorbs the energy of the microwaves. The molecules vibrate faster, so the food gets warmer.',
+      w: [{ t: 'The microwaves heat the air in the oven, and the hot air cooks the food.', why: 'The microwaves are absorbed by the food itself, mainly by the water in it.' },
+          { t: 'The microwaves are X-rays that destroy the food’s cells.', why: 'Microwaves have longer wavelengths and lower energy than X-rays. They heat food, they do not destroy its cells.' },
+          { t: 'The oven turns the microwaves into sound waves that shake the food.', why: 'Microwaves are not turned into sound. The food absorbs the electromagnetic energy directly.' }] },
+    { q: 'A hospital uses ultraviolet lamps to sterilize tools. Why does ultraviolet light work for this?', art: artUV(),
+      c: 'Ultraviolet waves carry enough energy to damage the DNA of germs so they cannot reproduce.', why: 'Ultraviolet waves have a high frequency and carry more energy than visible light. That energy damages the DNA of germs.',
+      w: [{ t: 'Ultraviolet waves have the longest wavelength, so they reach every germ.', why: 'Ultraviolet waves have a short wavelength. Radio waves have the longest wavelengths.' },
+          { t: 'Ultraviolet waves heat the tools until the germs melt.', why: 'Sterilizing with ultraviolet light is not about heat. It works because the waves damage the germs’ DNA.' },
+          { t: 'Ultraviolet waves are the only electromagnetic waves that can be absorbed.', why: 'Many electromagnetic waves can be absorbed. Ultraviolet works for sterilizing because of its energy.' }] },
+    { q: 'Astronomers study stars and galaxies with radio, infrared, visible-light and X-ray telescopes. Why do they use so many kinds of electromagnetic waves?', art: artAstro(),
+      c: 'Each type of wave shows different information, because space objects give off many kinds of waves.', why: 'Different waves reveal different details, such as temperature, motion and hidden objects. Combining them gives a fuller picture.',
+      w: [{ t: 'Only X-rays can travel through space, so the others are backups.', why: 'All electromagnetic waves can travel through empty space.' },
+          { t: 'Different waves travel at different speeds, so astronomers must compare them.', why: 'In empty space, all electromagnetic waves travel at the same speed, the speed of light.' },
+          { t: 'Visible light is too weak to travel from stars to Earth.', why: 'We see stars because their visible light does reach Earth.' }] },
+    { q: 'In a hospital X-ray image, bones look white and soft tissue looks dark. Why?', art: artXray(),
+      c: 'Bones absorb more X-rays than soft tissue, so fewer X-rays reach the detector behind the bones.', why: 'X-rays pass through soft tissue easily but are absorbed by dense bone. The detector records the shadow of the bones.',
+      w: [{ t: 'Bones give off their own light when X-rays hit them.', why: 'Bones do not glow. They look white because they block X-rays from reaching the detector.' },
+          { t: 'Soft tissue absorbs all the X-rays, but bones let them pass.', why: 'It is the other way around. Bones absorb more X-rays, and soft tissue lets more pass through.' },
+          { t: 'X-rays can only travel through bones.', why: 'X-rays pass through soft tissue very well. Bones are just better at absorbing them.' }] },
+    { q: 'Which pair correctly matches an electromagnetic wave with a use?',
+      c: 'Ultraviolet waves: sterilizing medical tools', why: 'Ultraviolet waves carry enough energy to damage germs, so they are used to sterilize tools, air and water.',
+      w: [{ t: 'Radio waves: destroying tumors in radiation therapy', why: 'Radiation therapy uses high-energy X-rays or gamma rays. Radio waves carry too little energy.' },
+          { t: 'X-rays: sending data through fiber optic cables', why: 'Fiber optic cables carry pulses of light, not X-rays.' },
+          { t: 'Microwaves: taking pictures of bones', why: 'X-rays are used to take pictures of bones. Microwaves are used for heating food and sending signals.' }] },
+    { q: 'A student shakes a rope harder so the waves get taller, but shakes at the same speed as before. Which property of the wave increased?',
+      c: 'Amplitude', why: 'Taller waves have a larger amplitude. A larger amplitude means the wave carries more energy.',
+      w: [{ t: 'Frequency', why: 'The student shakes at the same speed, so the same number of waves pass each second. The frequency did not change.' },
+          { t: 'Wavelength', why: 'The frequency and wave speed stayed the same, so the wavelength stayed the same.' },
+          { t: 'Wave speed', why: 'Wave speed depends on the rope, not on how hard you shake it.' }] },
+    { q: 'Which color of visible light has the longest wavelength and the lowest frequency?',
+      c: 'Red', why: 'Red light has the longest wavelength and lowest frequency in the visible spectrum.',
+      w: [{ t: 'Violet', why: 'Violet has the shortest wavelength and highest frequency of visible light.' },
+          { t: 'Green', why: 'Green is in the middle of the visible spectrum. Red has a longer wavelength.' },
+          { t: 'Blue', why: 'Blue has a shorter wavelength than green and red.' }] },
+    { q: 'A sunscreen label warns about ultraviolet rays. Why is ultraviolet light more harmful to skin than infrared light?',
+      c: 'Ultraviolet waves have a higher frequency, so each wave carries more energy than infrared waves.', why: 'Higher frequency means more energy. Ultraviolet waves have enough energy to damage skin cells.',
+      w: [{ t: 'Ultraviolet waves have a lower frequency, so they last longer.', why: 'Ultraviolet waves have a higher frequency than infrared waves, not a lower one.' },
+          { t: 'Ultraviolet waves have a longer wavelength, so they go deeper.', why: 'Ultraviolet waves have a shorter wavelength than infrared waves.' },
+          { t: 'Ultraviolet waves travel faster than infrared waves.', why: 'In empty space, all electromagnetic waves travel at the same speed.' }] }
+  ];
+
+  /* ---------- utilities ---------- */
+  function shuffle(a) { var b = a.slice(); for (var i = b.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var x = b[i]; b[i] = b[j]; b[j] = x; } return b; }
+  function $(id) { return document.getElementById(id); }
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+
+  /* ---------- flash cards ---------- */
+  var cv = $('view-cards');
+  var C = { deck: [], idx: 0, flipped: false, res: {}, first: 'term', done: false };
+
+  function startDeck(list, doShuffle) {
+    C.deck = doShuffle ? shuffle(list) : list.slice();
+    C.idx = 0; C.flipped = false; C.res = {}; C.done = false;
+    renderCards();
+  }
+  function counts() {
+    var g = 0, m = 0;
+    C.deck.forEach(function (c) { if (C.res[c.id] === 'got') g++; else if (C.res[c.id] === 'miss') m++; });
+    return { g: g, m: m };
+  }
+  function frontHTML(c) {
+    if (C.first === 'picture') {
+      return '<span class="chip">' + c.tag + '</span><div class="front-center"><p class="flip-hint">What term does this picture show?</p><div class="fig big">' + svg(c.art, c.cap, false) + '</div><p class="flip-hint">Tap the card to flip it</p></div>';
+    }
+    if (C.first === 'definition') {
+      return '<span class="chip">' + c.tag + '</span><div class="front-center"><p class="flip-hint">Which term matches this definition?</p><p class="def" style="font-size:clamp(20px,5vw,26px);line-height:1.35">' + esc(c.def) + '</p><p class="flip-hint">Tap the card to flip it</p></div>';
+    }
+    return '<span class="chip">' + c.tag + '</span><div class="front-center"><h2 class="term">' + esc(c.term) + '</h2><p class="flip-hint">Say the meaning in your own words, then tap the card to check.</p></div>';
+  }
+  function backHTML(c) {
+    return '<span class="chip">' + c.tag + '</span><h2 class="term" style="font-size:clamp(24px,6vw,32px)">' + esc(c.term) + '</h2><p class="def">' + esc(c.def) + '</p><div class="fig">' + svg(c.art, c.cap, true) + '</div>';
+  }
+  function renderCards() {
+    if (C.done) { renderSummary(); return; }
+    var c = C.deck[C.idx], n = C.deck.length, k = counts(), st = C.res[c.id];
+    var pill = st === 'got' ? '<span class="state-pill got">Marked: got it</span>' : st === 'miss' ? '<span class="state-pill miss">Marked: study again</span>' : '';
+    cv.innerHTML =
+      '<div class="bar"><div class="seg" role="group" aria-label="Start each card with">' +
+        '<button type="button" data-first="term" aria-pressed="' + (C.first === 'term') + '">Term first</button>' +
+        '<button type="button" data-first="definition" aria-pressed="' + (C.first === 'definition') + '">Definition first</button>' +
+        '<button type="button" data-first="picture" aria-pressed="' + (C.first === 'picture') + '">Picture first</button></div>' +
+        '<button class="btn" type="button" id="c-shuffle">Shuffle deck</button></div>' +
+      '<div class="meter"><div class="meter-top"><span>Card ' + (C.idx + 1) + ' of ' + n + '</span><span aria-live="polite">Got it ' + k.g + ' · Study again ' + k.m + '</span></div>' +
+        '<div class="track" aria-hidden="true"><i class="got" style="width:' + (k.g / n * 100) + '%"></i><i class="miss" style="width:' + (k.m / n * 100) + '%"></i></div></div>' +
+      pill +
+      '<div class="stage"><button type="button" class="card' + (C.flipped ? ' flipped' : '') + '" id="c-card" aria-label="Flash card. Press to flip.">' +
+        '<div class="face front" aria-hidden="' + C.flipped + '">' + frontHTML(c) + '</div>' +
+        '<div class="face back" aria-hidden="' + (!C.flipped) + '">' + backHTML(c) + '</div></button></div>' +
+      '<div class="actions"><div class="grp"><button class="btn" type="button" id="c-prev">Back</button><button class="btn" type="button" id="c-next">Skip</button></div>' +
+        '<div class="grp"><button class="btn warn" type="button" id="c-miss"' + (C.flipped ? '' : ' disabled') + '>Study again</button><button class="btn good" type="button" id="c-got"' + (C.flipped ? '' : ' disabled') + '>Got it</button></div></div>' +
+      '<p class="note">' + (C.flipped ? 'Be honest. Cards you miss go into a retry deck at the end.' : 'Flip the card to unlock the Got it and Study again buttons. Arrow keys move between cards.') + '</p>';
+    cv.querySelectorAll('[data-first]').forEach(function (b) { b.addEventListener('click', function () { C.first = b.getAttribute('data-first'); C.flipped = false; renderCards(); }); });
+    $('c-shuffle').addEventListener('click', function () { startDeck(C.deck, true); });
+    $('c-card').addEventListener('click', function () { C.flipped = !C.flipped; $('c-card').classList.toggle('flipped', C.flipped); setTimeout(renderCards, 0); });
+    $('c-prev').addEventListener('click', function () { go(-1); });
+    $('c-next').addEventListener('click', function () { go(1); });
+    $('c-got').addEventListener('click', function () { mark('got'); });
+    $('c-miss').addEventListener('click', function () { mark('miss'); });
+  }
+  function go(d) { C.idx = (C.idx + d + C.deck.length) % C.deck.length; C.flipped = false; renderCards(); }
+  function mark(v) {
+    var c = C.deck[C.idx]; C.res[c.id] = v;
+    var left = C.deck.some(function (x) { return !C.res[x.id]; });
+    if (!left) { C.done = true; renderCards(); return; }
+    for (var i = 1; i <= C.deck.length; i++) {
+      var j = (C.idx + i) % C.deck.length;
+      if (!C.res[C.deck[j].id]) { C.idx = j; break; }
+    }
+    C.flipped = false; renderCards();
+  }
+  function renderSummary() {
+    var k = counts(), n = C.deck.length, missed = C.deck.filter(function (c) { return C.res[c.id] === 'miss'; });
+    cv.innerHTML =
+      '<div class="qcard"><p class="eyebrow">Deck complete</p><p class="score">' + k.g + ' of ' + n + '</p>' +
+      '<p>' + (missed.length ? 'You marked ' + missed.length + ' card' + (missed.length === 1 ? '' : 's') + ' to study again. Retry just those, or run the whole deck in a new order.' : 'You got every card. Shuffle the deck to test yourself in a new order.') + '</p>' +
+      (missed.length ? '<ul class="review">' + missed.map(function (c) { return '<li><p class="q">' + esc(c.term) + '</p><p class="w">' + esc(c.def) + '</p></li>'; }).join('') + '</ul>' : '') +
+      '<div class="actions"><div class="grp">' +
+        (missed.length ? '<button class="btn primary" type="button" id="s-retry">Retry missed (' + missed.length + ')</button>' : '') +
+        '<button class="btn' + (missed.length ? '' : ' primary') + '" type="button" id="s-shuf">Shuffle all and restart</button>' +
+        '<button class="btn" type="button" id="s-ord">Restart in order</button></div></div></div>';
+    if (missed.length) $('s-retry').addEventListener('click', function () { startDeck(missed, true); });
+    $('s-shuf').addEventListener('click', function () { startDeck(CARDS, true); });
+    $('s-ord').addEventListener('click', function () { startDeck(CARDS, false); });
+  }
+
+  /* ---------- quiz ---------- */
+  var QS = { quiz: { list: [], i: 0, picked: -1, score: 0, missed: [] } };
+  var Q = QS.quiz, qv = $('view-quiz'), SRC = QUIZ, PREFIX = 'Bank #', ENG = 'quiz';
+  function useEngine(name) {
+    ENG = name; Q = QS[name]; qv = $('view-' + name); SRC = QUIZ; PREFIX = 'Bank #';
+  }
+  var LET = ['A', 'B', 'C', 'D', 'E'];
+  function buildQs(src) {
+    return shuffle(src).map(function (x) {
+      if (x.multi) return { q: x.q, num: SRC.indexOf(x) + 1, multi: x.multi, muOpts: shuffle(x.multi.opts), muSel: [], muDone: false, art: x.art, table: x.table, why: x.why, c: x.c, src: x };
+      if (x.dds) return { q: x.q, num: SRC.indexOf(x) + 1, table: x.table, dds: x.dds, dSel: x.dds.parts.map(function () { return ''; }), dChecked: false, why: x.why, c: x.c, src: x };
+      if (x.dd) return { q: x.q, num: SRC.indexOf(x) + 1, dd: x.dd, ddPlace: { top: null, bottom: null }, ddSel: null, ddChecked: false, why: x.why, c: x.c, src: x };
+      if (x.matrix) return { q: x.q, num: SRC.indexOf(x) + 1, matrix: x.matrix, mSel: [-1, -1, -1], mChecked: false, why: x.why, c: x.c, src: x };
+      var opts = shuffle([{ t: x.c, ok: true, why: x.why }].concat(x.w.map(function (w) { return { t: w.t, ok: false, why: w.why }; })));
+      return { q: x.q, num: SRC.indexOf(x) + 1, art: x.art, table: x.table, opts: opts, why: x.why, c: x.c, src: x };
+    });
+  }
+  function startQuiz(src) { Q.list = buildQs(src); Q.i = 0; Q.picked = -1; Q.score = 0; Q.missed = []; renderQuiz(); }
+  function renderQuiz() {
+    if (Q.i >= Q.list.length) { renderResults(); return; }
+    var q = Q.list[Q.i], n = Q.list.length, answered = Q.picked >= 0;
+    if (q.matrix) { renderMatrix(q, n); return; }
+    if (q.dd) { renderDD(q, n); return; }
+    if (q.dds) { renderDDS(q, n); return; }
+    if (q.multi) { renderMulti(q, n); return; }
+    var okPick = answered && q.opts[Q.picked].ok;
+    var fb = '';
+    if (answered) {
+      var pk = q.opts[Q.picked];
+      fb = okPick
+        ? '<div class="fb right" role="status"><strong>Correct!</strong>' + esc(q.why) + '</div>'
+        : '<div class="fb wrong" role="status"><strong>Not quite.</strong>' + esc(pk.why) + '</div>' +
+          '<div class="fb right"><strong>The correct answer: ' + esc(q.c) + '</strong>' + esc(q.why) + '</div>';
+    }
+    qv.innerHTML =
+      '<div class="meter"><div class="meter-top"><span>Question ' + (Q.i + 1) + ' of ' + n + '</span><span aria-live="polite">Score ' + Q.score + '</span></div>' +
+        '<div class="track" aria-hidden="true"><i class="got" style="width:' + (Q.i / n * 100) + '%"></i></div></div>' +
+      '<div class="qcard"><span class="chip">' + PREFIX + q.num + '</span><p class="qtext">' + esc(q.q) + '</p>' +
+      (q.art ? '<div class="fig">' + svg(q.art, null, false) + '</div>' : '') +
+      (q.table ? '<div class="dataset tbl">' + q.table + '</div>' : '') +
+      '<div class="opts">' +
+      q.opts.map(function (o, k) {
+        var cls = 'opt' + (answered ? (o.ok ? ' right' : (k === Q.picked ? ' wrong' : '')) : '');
+        return '<button type="button" class="' + cls + '" data-k="' + k + '"' + (answered ? ' disabled' : '') + '><span class="k">' + LET[k] + '</span><span class="t">' + esc(o.t) + '</span></button>';
+      }).join('') + '</div>' + fb +
+      (answered ? '<div class="ai-out fb" id="q-ai-out" hidden></div><div class="actions"><span>' + (AI.sample ? '<button class="btn" type="button" id="q-ai">Explain it another way</button>' : '') + '</span><button class="btn primary" type="button" id="q-next">' + (Q.i + 1 === n ? 'See results' : 'Next question') + '</button></div>' : '') +
+      '</div>';
+    qv.querySelectorAll('.opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var k = Number(b.getAttribute('data-k')); Q.picked = k;
+        if (q.opts[k].ok) Q.score++; else Q.missed.push(q.src);
+        renderQuiz();
+        var f = qv.querySelector('.fb'); if (f && f.scrollIntoView) f.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      });
+    });
+    if (answered && AI.sample && $('q-ai')) $('q-ai').addEventListener('click', function () {
+      var out = $('q-ai-out'), pk = q.opts[Q.picked]; out.hidden = false; out.textContent = 'Thinking\u2026'; $('q-ai').disabled = true;
+      AI.sample('You are a friendly grade 8 science tutor. A student answered a practice question. Explain the idea a different way, using a simple real-life analogy, in 3 to 4 short sentences at an 8th grade reading level. Do not ask a new question. Plain text only.\n\nQuestion: ' + q.q + '\nStudent chose: ' + pk.t + '\nCorrect answer: ' + q.c + '\nTextbook explanation: ' + q.why, { modelTier: 'quick', onText: function (u) { out.textContent = u.text; } })
+        .catch(function (e) { out.textContent = errCopy(e && e.code); })
+        .then(function () { if ($('q-ai')) $('q-ai').disabled = false; });
+    });
+    if (answered) $('q-next').addEventListener('click', function () { Q.i++; Q.picked = -1; renderQuiz(); window.scrollTo(0, 0); });
+  }
+  function ddSvg() {
+    return '<svg viewBox="0 0 220 180" role="img" aria-label="A ball with two force arrows. The top arrow points down. The bottom arrow points up. A compass shows north is toward the top." focusable="false">' +
+      '<line class="gnd" x1="36" y1="22" x2="36" y2="62" stroke-width="1.5"/><line class="gnd" x1="16" y1="42" x2="56" y2="42" stroke-width="1.5"/><circle class="obj" cx="36" cy="42" r="4"/>' +
+      t(36, 16, 'N') + t(36, 76, 'S') + t(10, 46, 'W') + t(62, 46, 'E') +
+      '<circle class="obj" cx="130" cy="90" r="28"/>' + t(130, 94, 'MASSLABEL') +
+      arrow(130, 6, 130, 56, 'f', 4) + arrow(130, 174, 130, 124, 'f', 4) + '</svg>';
+  }
+  function boxSvg() {
+    return '<svg viewBox="0 0 360 170" role="img" aria-label="A box with three forces. Two arrows on the left point right: 37 newtons and 28 newtons. One arrow on the right points left: 95 newtons." focusable="false">' +
+      '<polygon points="130,60 150,42 220,42 200,60" fill="var(--obj)" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/>' +
+      '<polygon points="200,60 220,42 220,112 200,130" fill="var(--react)" opacity=".55" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/>' +
+      '<rect x="130" y="60" width="70" height="70" fill="var(--obj)" stroke="var(--ink)" stroke-width="2.5"/>' + t(165, 100, '40 kg', 'middle', 'vl') +
+      arrow(16, 80, 124, 80, 'n', 4) + t(70, 68, '37 N', 'middle', 'vl') + arrow(16, 114, 124, 114, 'n', 4) + t(70, 102, '28 N', 'middle', 'vl') +
+      arrow(344, 96, 238, 96, 'n', 4) + t(292, 84, '95 N', 'middle', 'vl') + '</svg>';
+  }
+  function renderMulti(q, n) {
+    var done = q.muDone, sel = q.muSel, need = q.multi.pick;
+    var fb = '';
+    if (done) {
+      fb = q.muOpts.map(function (o, k) {
+        var picked = sel.indexOf(k) > -1;
+        var label = o.ok ? (picked ? 'Correct: ' : 'You missed this one: ') : (picked ? 'Not correct: ' : 'Not one of the answers: ');
+        return '<div class="fb ' + ((o.ok && picked) || (!o.ok && !picked) ? 'right' : 'wrong') + '"><strong>' + label + esc(o.t) + '</strong>' + esc(o.why) + '</div>';
+      }).join('');
+    }
+    qv.innerHTML =
+      '<div class="meter"><div class="meter-top"><span>Question ' + (Q.i + 1) + ' of ' + n + '</span><span aria-live="polite">Score ' + Q.score + '</span></div>' +
+        '<div class="track" aria-hidden="true"><i class="got" style="width:' + (Q.i / n * 100) + '%"></i></div></div>' +
+      '<div class="qcard"><span class="chip">' + PREFIX + q.num + '</span><p class="qtext">' + esc(q.q) + '</p>' +
+      (q.art ? '<div class="fig">' + svg(q.art, null, false) + '</div>' : '') +
+      (q.table ? '<div class="dataset tbl">' + q.table + '</div>' : '') +
+      '<p class="flip-hint" style="margin:0">Select ' + need + ' answers.</p><div class="opts">' +
+      q.muOpts.map(function (o, k) {
+        var picked = sel.indexOf(k) > -1;
+        var cls = 'opt' + (done ? (o.ok ? ' right' : (picked ? ' wrong' : '')) : (picked ? ' sel' : ''));
+        return '<button type="button" class="' + cls + '" data-k="' + k + '" aria-pressed="' + picked + '"' + (done ? ' disabled' : '') + '><span class="k">' + LET[k] + '</span><span class="t">' + esc(o.t) + '</span></button>';
+      }).join('') + '</div>' + fb +
+      '<div class="actions"><span></span>' + (done
+        ? '<button class="btn primary" type="button" id="mu-next">' + (Q.i + 1 === n ? 'See results' : 'Next question') + '</button>'
+        : '<button class="btn primary" type="button" id="mu-check"' + (sel.length === need ? '' : ' disabled') + '>Check my answers</button>') + '</div></div>';
+    if (done) {
+      $('mu-next').addEventListener('click', function () { Q.i++; Q.picked = -1; renderQuiz(); window.scrollTo(0, 0); });
+      var f = qv.querySelector('.fb'); if (f && f.scrollIntoView) f.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      return;
+    }
+    qv.querySelectorAll('.opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var k = +b.getAttribute('data-k'), at = sel.indexOf(k);
+        if (at > -1) sel.splice(at, 1); else if (sel.length < need) sel.push(k);
+        renderMulti(q, n);
+      });
+    });
+    var chk = $('mu-check');
+    if (chk) chk.addEventListener('click', function () {
+      q.muDone = true;
+      var good = q.muOpts.every(function (o, k) { return o.ok === (sel.indexOf(k) > -1); });
+      if (good) Q.score++; else Q.missed.push(q.src);
+      renderMulti(q, n);
+    });
+  }
+  function renderDDS(q, n) {
+    var D = q.dds, done = q.dChecked, sel = q.dSel;
+    var rows = D.parts.map(function (pt, i) {
+      var cls = done ? (sel[i] === pt.ans ? ' class="ok"' : ' class="bad"') : '';
+      return '<div class="ddrow"><label for="dds' + i + '">' + esc(pt.label) + '</label><select id="dds' + i + '"' + cls + (done ? ' disabled' : '') + '><option value="">Choose…</option>' +
+        pt.opts.map(function (o) { return '<option value="' + esc(o) + '"' + (sel[i] === o ? ' selected' : '') + '>' + esc(o) + '</option>'; }).join('') + '</select></div>';
+    }).join('');
+    var fb = done ? D.parts.map(function (pt, i) {
+      var ok = sel[i] === pt.ans;
+      return '<div class="fb ' + (ok ? 'right' : 'wrong') + '"><strong>' + (ok ? 'Correct: ' : 'Not quite: ') + esc(pt.label) + '</strong>' +
+        (ok ? '' : esc(pt.wrong[sel[i]] || '') + ' The right answer is ' + esc(pt.ans) + '. ') + esc(pt.why) + '</div>';
+    }).join('') : '';
+    var ready = sel.every(function (v) { return v !== ''; });
+    qv.innerHTML =
+      '<div class="meter"><div class="meter-top"><span>Question ' + (Q.i + 1) + ' of ' + n + '</span><span aria-live="polite">Score ' + Q.score + '</span></div>' +
+        '<div class="track" aria-hidden="true"><i class="got" style="width:' + (Q.i / n * 100) + '%"></i></div></div>' +
+      '<div class="qcard"><span class="chip">' + PREFIX + q.num + '</span><p class="qtext">' + esc(q.q) + '</p>' +
+      (D.svg ? '<div class="fig big">' + D.svg() + '</div>' : '') + (q.table ? '<div class="dataset tbl">' + q.table + '</div>' : '') + rows + fb +
+      '<div class="actions"><span></span>' + (done
+        ? '<button class="btn primary" type="button" id="dds-next">' + (Q.i + 1 === n ? 'See results' : 'Next question') + '</button>'
+        : '<button class="btn primary" type="button" id="dds-check"' + (ready ? '' : ' disabled') + '>Check my answers</button>') + '</div></div>';
+    if (done) {
+      $('dds-next').addEventListener('click', function () { Q.i++; Q.picked = -1; renderQuiz(); window.scrollTo(0, 0); });
+      var f = qv.querySelector('.fb'); if (f && f.scrollIntoView) f.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      return;
+    }
+    D.parts.forEach(function (pt, i) {
+      $('dds' + i).addEventListener('change', function () { sel[i] = $('dds' + i).value; $('dds-check').disabled = !sel.every(function (v) { return v !== ''; }); });
+    });
+    $('dds-check').addEventListener('click', function () {
+      q.dChecked = true;
+      if (D.parts.every(function (pt, i) { return sel[i] === pt.ans; })) Q.score++; else Q.missed.push(q.src);
+      renderDDS(q, n);
+    });
+  }
+  function renderDD(q, n) {
+    var D = q.dd, P = q.ddPlace, done = q.ddChecked;
+    var bank = D.chips.filter(function (v) { return v !== P.top && v !== P.bottom; });
+    function chipHTML(v, where) {
+      return '<button type="button" class="chipbtn" draggable="' + (!done) + '" data-v="' + v + '" data-where="' + where + '" aria-pressed="' + (q.ddSel === v) + '"' + (done ? ' disabled' : '') + '>' + v + ' newtons</button>';
+    }
+    function zone(key, label) {
+      var v = P[key], cls = 'zone' + (done ? (v === D[key] ? ' ok' : ' bad') : '');
+      return '<div class="' + cls + '" data-zone="' + key + '" tabindex="' + (done ? '-1' : '0') + '" role="group" aria-label="Box for the ' + label + '">' + (v !== null ? chipHTML(v, key) : '<span>' + label + ': drop an answer here</span>') + '</div>';
+    }
+    var svgHTML = ddSvg().replace('MASSLABEL', D.mass + ' kg');
+    var fb = '';
+    if (done) {
+      var net = P.bottom - P.top, ok = P.top === D.top && P.bottom === D.bottom;
+      var what = net > 0 ? 'a net force of ' + net + ' N to the north, so the ball would accelerate north at ' + Math.round(net / D.mass * 100) / 100 + ' m/s²'
+        : net < 0 ? 'a net force of ' + (-net) + ' N to the south, so the ball would accelerate south at ' + Math.round(-net / D.mass * 100) / 100 + ' m/s²'
+        : 'balanced forces, so the ball would not accelerate';
+      fb = ok ? '<div class="fb right" role="status"><strong>Correct!</strong>' + esc(q.why) + '</div>'
+        : '<div class="fb wrong" role="status"><strong>Not quite.</strong>Your labels give ' + esc(what) + '. The ball needs to accelerate north at ' + D.a + ' m/s², so the net force must be ' + D.mass + ' kg × ' + D.a + ' m/s² = ' + (D.mass * D.a) + ' N to the north.</div>' +
+          '<div class="fb right"><strong>The correct answer: ' + esc(q.c) + '</strong>' + esc(q.why) + '</div>';
+    }
+    var ready = P.top !== null && P.bottom !== null;
+    qv.innerHTML =
+      '<div class="meter"><div class="meter-top"><span>Question ' + (Q.i + 1) + ' of ' + n + '</span><span aria-live="polite">Score ' + Q.score + '</span></div>' +
+        '<div class="track" aria-hidden="true"><i class="got" style="width:' + (Q.i / n * 100) + '%"></i></div></div>' +
+      '<div class="qcard"><span class="chip">' + PREFIX + q.num + '</span><p class="qtext">' + esc(q.q) + '</p>' +
+      '<div class="dd-bank" data-bank="1" aria-label="Answer choices">' + (bank.length ? bank.map(function (v) { return chipHTML(v, 'bank'); }).join('') : '<span class="note">All answers are placed.</span>') + '</div>' +
+      '<div class="dd-wrap"><div class="fig">' + svgHTML + '</div><div class="dd-zones">' + zone('top', 'Top arrow') + zone('bottom', 'Bottom arrow') + '</div></div>' +
+      (done ? '' : '<p class="note">Drag a label into each box, or tap a label and then tap a box. Tap a placed label to take it back.</p>') + fb +
+      '<div class="actions"><span></span>' + (done
+        ? '<button class="btn primary" type="button" id="dd-next">' + (Q.i + 1 === n ? 'See results' : 'Next question') + '</button>'
+        : '<button class="btn primary" type="button" id="dd-check"' + (ready ? '' : ' disabled') + '>Check my answers</button>') + '</div></div>';
+    if (done) {
+      $('dd-next').addEventListener('click', function () { Q.i++; Q.picked = -1; renderQuiz(); window.scrollTo(0, 0); });
+      var f = qv.querySelector('.fb'); if (f && f.scrollIntoView) f.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      return;
+    }
+    function place(key, v, from) {
+      if (from === 'top' || from === 'bottom') { P[from] = P[key]; }
+      P[key] = v; q.ddSel = null; renderDD(q, n);
+    }
+    qv.querySelectorAll('.chipbtn').forEach(function (b) {
+      var v = Number(b.getAttribute('data-v')), where = b.getAttribute('data-where');
+      b.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (where === 'bank') { q.ddSel = q.ddSel === v ? null : v; renderDD(q, n); }
+        else { P[where] = null; q.ddSel = null; renderDD(q, n); }
+      });
+      b.addEventListener('dragstart', function (e) { e.dataTransfer.setData('text/plain', v + '|' + where); e.dataTransfer.effectAllowed = 'move'; });
+    });
+    qv.querySelectorAll('.zone').forEach(function (z) {
+      var key = z.getAttribute('data-zone');
+      z.addEventListener('click', function () { if (q.ddSel !== null) place(key, q.ddSel, 'bank'); });
+      z.addEventListener('keydown', function (e) { if ((e.key === 'Enter' || e.key === ' ') && e.target === z && q.ddSel !== null) { e.preventDefault(); place(key, q.ddSel, 'bank'); } });
+      z.addEventListener('dragover', function (e) { e.preventDefault(); z.classList.add('over'); });
+      z.addEventListener('dragleave', function () { z.classList.remove('over'); });
+      z.addEventListener('drop', function (e) {
+        e.preventDefault(); z.classList.remove('over');
+        var d = (e.dataTransfer.getData('text/plain') || '').split('|'); var v = Number(d[0]); if (!isFinite(v) || D.chips.indexOf(v) < 0) return;
+        place(key, v, d[1]);
+      });
+    });
+    var bk = qv.querySelector('[data-bank]');
+    bk.addEventListener('dragover', function (e) { e.preventDefault(); bk.classList.add('over'); });
+    bk.addEventListener('dragleave', function () { bk.classList.remove('over'); });
+    bk.addEventListener('drop', function (e) {
+      e.preventDefault(); bk.classList.remove('over');
+      var d = (e.dataTransfer.getData('text/plain') || '').split('|');
+      if (d[1] === 'top' || d[1] === 'bottom') { P[d[1]] = null; q.ddSel = null; renderDD(q, n); }
+    });
+    $('dd-check').addEventListener('click', function () {
+      q.ddChecked = true;
+      if (P.top === D.top && P.bottom === D.bottom) Q.score++; else Q.missed.push(q.src);
+      renderDD(q, n);
+    });
+  }
+  function renderMatrix(q, n) {
+    var M = q.matrix, sel = q.mSel, done = q.mChecked;
+    var head = '<tr><th scope="col"><span class="vh">Situation</span></th>' + M.cols.map(function (c) { return '<th scope="col">' + esc(c) + '</th>'; }).join('') + '</tr>';
+    var rows = M.rows.map(function (r, i) {
+      var cells = M.cols.map(function (c, k) {
+        var cls = done && k === r.ans ? ' class="cellok"' : (done && sel[i] === k ? ' class="cellbad"' : '');
+        return '<td' + cls + '><input type="radio" name="mx' + i + '" value="' + k + '"' + (sel[i] === k ? ' checked' : '') + (done ? ' disabled' : '') + ' aria-label="' + esc(r.label + ': ' + c) + '"></td>';
+      }).join('');
+      return '<tr><th scope="row">' + esc(r.label) + '</th>' + cells + '</tr>';
+    }).join('');
+    var fb = done ? M.rows.map(function (r, i) {
+      var ok = sel[i] === r.ans;
+      return '<div class="fb ' + (ok ? 'right' : 'wrong') + '"><strong>' + (ok ? 'Correct: ' : 'Not quite: ') + esc(r.label) + '</strong>' + (ok ? '' : 'The right answer is “' + esc(M.cols[r.ans]) + '.” ') + esc(r.why) + '</div>';
+    }).join('') : '';
+    var ready = sel.every(function (v) { return v >= 0; });
+    qv.innerHTML =
+      '<div class="meter"><div class="meter-top"><span>Question ' + (Q.i + 1) + ' of ' + n + '</span><span aria-live="polite">Score ' + Q.score + '</span></div>' +
+        '<div class="track" aria-hidden="true"><i class="got" style="width:' + (Q.i / n * 100) + '%"></i></div></div>' +
+      '<div class="qcard"><span class="chip">' + PREFIX + q.num + '</span><p class="qtext">' + esc(q.q) + '</p>' +
+      '<div class="tbl"><table class="mx"><thead>' + head + '</thead><tbody>' + rows + '</tbody></table></div>' + fb +
+      '<div class="actions"><span></span>' + (done
+        ? '<button class="btn primary" type="button" id="mx-next">' + (Q.i + 1 === n ? 'See results' : 'Next question') + '</button>'
+        : '<button class="btn primary" type="button" id="mx-check"' + (ready ? '' : ' disabled') + '>Check my answers</button>') + '</div></div>';
+    if (done) {
+      $('mx-next').addEventListener('click', function () { Q.i++; Q.picked = -1; renderQuiz(); window.scrollTo(0, 0); });
+      var f = qv.querySelector('.fb'); if (f && f.scrollIntoView) f.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    } else {
+      qv.querySelectorAll('input[type="radio"]').forEach(function (r) {
+        r.addEventListener('change', function () {
+          sel[Number(r.name.slice(2))] = Number(r.value);
+          $('mx-check').disabled = !sel.every(function (v) { return v >= 0; });
+        });
+      });
+      $('mx-check').addEventListener('click', function () {
+        q.mChecked = true;
+        var all = M.rows.every(function (r, i) { return sel[i] === r.ans; });
+        if (all) Q.score++; else Q.missed.push(q.src);
+        renderMatrix(q, n);
+      });
+    }
+  }
+  function renderResults() {
+    var n = Q.list.length, m = Q.missed;
+    qv.innerHTML =
+      '<div class="qcard"><p class="eyebrow">Quiz complete</p><p class="score">' + Q.score + ' of ' + n + '</p>' +
+      '<p>' + (m.length ? 'Read the explanations for what you missed, then retry just those questions.' : 'Perfect score. Take it again in a new order to lock it in.') + '</p>' +
+      (m.length ? '<ul class="review">' + m.map(function (x) { return '<li><p class="q">' + esc(x.q) + '</p><p class="a">Answer: ' + esc(x.c) + '</p><p class="w">' + esc(x.why) + '</p></li>'; }).join('') + '</ul>' : '') +
+      '<div class="actions"><div class="grp">' +
+        (m.length ? '<button class="btn primary" type="button" id="r-retry">Retry missed (' + m.length + ')</button>' : '') +
+        '<button class="btn' + (m.length ? '' : ' primary') + '" type="button" id="r-all">New shuffle, all questions</button></div></div></div>';
+    if (m.length) $('r-retry').addEventListener('click', function () { startQuiz(m); });
+    $('r-all').addEventListener('click', function () { startQuiz(SRC); });
+  }
+
+
+  /* ---------- Study Guide Zone additions ---------- */
+  /* logo */
+  if (LOGO_SRC) {
+    $('logo-img').src = LOGO_SRC; $('logo-img').hidden = false; $('logo-paw').style.display = 'none';
+  }
+
+  $('g-wave').innerHTML = anatomySvg();
+  $('g-rel1').innerHTML = relSvg(24, 24, 2, 5, 'Wave 1: 2 waves in one second (low frequency), long wavelength', 'Wave 2: 5 waves in one second (high frequency), short wavelength', 'one second');
+  $('g-rel2').innerHTML = relSvg(30, 12, 3, 3, 'Wave 1: large amplitude, 3 waves in one second', 'Wave 2: small amplitude, 3 waves in one second (same frequency)', 'one second'); $('g-energy').innerHTML = energySvg(); $('g-spec').innerHTML = specSvg();
+
+  /* vocabulary list from the card deck */
+  $('vocab-list').innerHTML = CARDS.map(function (c) {
+    return '<div><dt>' + esc(c.term) + '</dt><dd>' + esc(c.def) + '</dd></div>';
+  }).join('');
+
+  /* ---------- Claude helper (optional) ---------- */
+  function errCopy(code) {
+    var m = {
+      not_granted: 'You chose not to allow Claude on this page. Reload the page if you change your mind.',
+      sampling_disabled: 'Claude is not available for this account.',
+      rate_limited: 'Too many requests right now. Wait a minute, then try again.',
+      session_expired: 'Please sign in to Claude again, then try again.',
+      prompt_too_large: 'That is too long. Shorten it and try again.',
+      refused: 'Claude could not answer that. Try rewording it.',
+      invalid_json: 'The feedback came back in a form I could not read. Press the button to try again.'
+    };
+    return m[code] || 'Something went wrong. Try again in a moment.';
+  }
+  function aiStatus() {}
+  AI.ready = false;
+  if (window.claude && window.claude.use) {
+    window.claude.use('sample').then(function (s) { AI.sample = s || null; AI.ready = true; aiStatus(); }).catch(function () { AI.ready = true; aiStatus(); });
+  } else { AI.ready = true; aiStatus(); }
+
+  /* ---------- tabs and routing ---------- */
+
+  /* ---------- order the spectrum ---------- */
+  var SPEC = [
+    { id: 'radio', name: 'Radio waves', fact: 'Radio, TV and Wi-Fi signals', sw: 'background:rgba(242,107,29,.2)' },
+    { id: 'micro', name: 'Microwaves', fact: 'Microwave ovens and cell phones', sw: 'background:rgba(242,107,29,.32)' },
+    { id: 'ir', name: 'Infrared', fact: 'Heat lamps and TV remotes', sw: 'background:rgba(242,107,29,.46)' },
+    { id: 'vis', name: 'Visible light', fact: 'The colors we can see', sw: 'background:linear-gradient(135deg,#d93025,#f4b400,#34a853,#1a73e8,#7b3fc4)' },
+    { id: 'uv', name: 'Ultraviolet', fact: 'Sunburn and sterilizing germs', sw: 'background:rgba(242,107,29,.7)' },
+    { id: 'xray', name: 'X-rays', fact: 'Images of bones', sw: 'background:rgba(242,107,29,.85)' },
+    { id: 'gamma', name: 'Gamma rays', fact: 'Radiation therapy', sw: 'background:rgba(242,107,29,1)' }
+  ];
+  var MODES = {
+    wl: { label: 'Longest to shortest wavelength', left: 'Longest wavelength', right: 'Shortest wavelength', rev: false },
+    freq: { label: 'Lowest to highest frequency', left: 'Lowest frequency', right: 'Highest frequency', rev: false },
+    energy: { label: 'Most to least energy', left: 'Most energy', right: 'Least energy', rev: true }
+  };
+  var OR = { mode: 'wl', list: [], checked: false, solved: false, shown: false };
+  var ov = $('view-order');
+  function orderAnswer() { var a = SPEC.map(function (s) { return s.id; }); return MODES[OR.mode].rev ? a.reverse() : a; }
+  function orderShuffle() {
+    var ans = orderAnswer(), l;
+    do { l = shuffle(ans); } while (l.join() === ans.join());
+    OR.list = l; OR.checked = false; OR.solved = false; OR.shown = false;
+  }
+  function specById(id) { return SPEC.filter(function (s) { return s.id === id; })[0]; }
+  function orderMove(from, to) {
+    if (to < 0 || to >= OR.list.length || from === to) return;
+    var x = OR.list.splice(from, 1)[0]; OR.list.splice(to, 0, x); OR.checked = false; renderOrder();
+  }
+  function renderOrder() {
+    var M = MODES[OR.mode], ans = orderAnswer(), locked = OR.solved || OR.shown, right = 0;
+    var rows = OR.list.map(function (id, i) {
+      var s = specById(id), ok = OR.checked && ans[i] === id;
+      if (ok) right++;
+      var cls = 'ord-row' + (OR.checked ? (ans[i] === id ? ' ok' : ' bad') : '');
+      return '<li class="' + cls + '" draggable="' + (!locked) + '" data-i="' + i + '"><span class="ord-n">' + (i + 1) + '</span><span class="ord-sw" style="' + s.sw + '"></span>' +
+        '<span class="ord-t"><strong>' + s.name + '</strong><small>' + s.fact + '</small></span>' +
+        '<span class="ord-btns"><button type="button" data-mv="-1" data-i="' + i + '" aria-label="Move ' + s.name + ' up"' + (locked || i === 0 ? ' disabled' : '') + '>▲</button>' +
+        '<button type="button" data-mv="1" data-i="' + i + '" aria-label="Move ' + s.name + ' down"' + (locked || i === OR.list.length - 1 ? ' disabled' : '') + '>▼</button></span></li>';
+    }).join('');
+    var msg = '';
+    if (OR.solved) {
+      msg = '<div class="fb right" role="status"><strong>Correct! You put the spectrum in the right order.</strong>' +
+        (OR.mode === 'energy' ? 'Gamma rays carry the most energy and radio waves carry the least. ' : 'Radio waves have the longest wavelengths and lowest frequencies. Gamma rays have the shortest wavelengths and highest frequencies. ') +
+        'A memory trick for radio to gamma: <em>Raging Martians Invaded Venus Using X-ray Guns.</em></div>';
+    } else if (OR.shown) {
+      msg = '<div class="fb right" role="status"><strong>Here is the correct order.</strong>Read it from top to bottom, then press Shuffle and try again.</div>';
+    } else if (OR.checked) {
+      msg = '<div class="fb wrong" role="status"><strong>Not yet. ' + right + ' of ' + OR.list.length + ' are in the right place.</strong>Rows with a red outline need to move. Remember: toward gamma rays the wavelength gets shorter, the frequency gets higher, and the energy gets greater.</div>';
+    }
+    ov.innerHTML =
+      '<h2 class="h2">Order the electromagnetic spectrum</h2>' +
+      '<p>Put the seven kinds of electromagnetic waves in the right order. Drag a row, or use the arrow buttons to move it. Then press Check order.</p>' +
+      '<div class="ord-modes" role="group" aria-label="Choose an order">' + Object.keys(MODES).map(function (k) {
+        return '<button type="button" class="btn" data-mode="' + k + '" aria-pressed="' + (k === OR.mode) + '">' + MODES[k].label + '</button>'; }).join('') + '</div>' +
+      '<div class="ord-end">▲ ' + M.left + '</div><ol class="ord-list" id="ord-list">' + rows + '</ol><div class="ord-end">▼ ' + M.right + '</div>' + msg +
+      '<div class="actions"><span></span><span style="display:flex;gap:8px;flex-wrap:wrap">' +
+      '<button type="button" class="btn" id="ord-shuf">Shuffle</button>' +
+      (OR.checked && !OR.solved && !OR.shown ? '<button type="button" class="btn" id="ord-show">Show answer</button>' : '') +
+      (locked ? '' : '<button type="button" class="btn primary" id="ord-check">Check order</button>') + '</span></div>';
+    ov.querySelectorAll('[data-mode]').forEach(function (b) { b.addEventListener('click', function () { OR.mode = b.getAttribute('data-mode'); orderShuffle(); renderOrder(); }); });
+    ov.querySelectorAll('[data-mv]').forEach(function (b) { b.addEventListener('click', function () { var i = +b.getAttribute('data-i'); orderMove(i, i + (+b.getAttribute('data-mv'))); }); });
+    var dragFrom = -1;
+    ov.querySelectorAll('.ord-row').forEach(function (r) {
+      r.addEventListener('dragstart', function (e) { dragFrom = +r.getAttribute('data-i'); r.classList.add('drag'); if (e.dataTransfer) { e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain', String(dragFrom)); } });
+      r.addEventListener('dragend', function () { r.classList.remove('drag'); });
+      r.addEventListener('dragover', function (e) { e.preventDefault(); r.classList.add('over'); });
+      r.addEventListener('dragleave', function () { r.classList.remove('over'); });
+      r.addEventListener('drop', function (e) { e.preventDefault(); var to = +r.getAttribute('data-i'); if (dragFrom > -1) orderMove(dragFrom, to); dragFrom = -1; });
+    });
+    $('ord-shuf').addEventListener('click', function () { orderShuffle(); renderOrder(); });
+    if ($('ord-show')) $('ord-show').addEventListener('click', function () { OR.list = ans.slice(); OR.shown = true; OR.checked = false; renderOrder(); });
+    if ($('ord-check')) $('ord-check').addEventListener('click', function () {
+      OR.checked = true; OR.solved = OR.list.join() === ans.join(); renderOrder();
+    });
+  }
+  orderShuffle();
+
+  /* ---------- teacher review: every question and answer on one page ---------- */
+  function renderReview() {
+    var rv = $('view-review'), out = '';
+    QUIZ.forEach(function (q, i) {
+      var body = '';
+      if (q.art) body += '<div class="fig">' + svg(q.art, null, false) + '</div>';
+      if (q.table) body += '<div class="dataset tbl">' + q.table + '</div>';
+      if (q.multi) {
+        body += '<p class="flip-hint">Select ' + q.multi.pick + ' answers.</p>' + q.multi.opts.map(function (o) {
+          return '<div class="rv-o' + (o.ok ? ' ok' : '') + '"><strong>' + (o.ok ? '✓ Correct: ' : '✗ Not correct: ') + '</strong>' + esc(o.t) + '<small>' + esc(o.why) + '</small></div>'; }).join('');
+      } else if (q.dds) {
+        if (q.dds.svg) body += '<div class="fig big">' + q.dds.svg() + '</div>';
+        body += q.dds.parts.map(function (p) {
+          return '<div class="rv-o"><strong>' + esc(p.label) + '</strong><br>Choices: ' + p.opts.map(esc).join(' · ') + '<br><strong>✓ ' + esc(p.ans) + '</strong><small>' + esc(p.why) + '</small></div>'; }).join('');
+      } else {
+        body += '<div class="rv-o ok"><strong>✓ Correct: </strong>' + esc(q.c) + '<small>' + esc(q.why) + '</small></div>' +
+          q.w.map(function (o) { return '<div class="rv-o"><strong>✗ </strong>' + esc(o.t) + '<small>' + esc(o.why) + '</small></div>'; }).join('');
+      }
+      out += '<div class="rv-q"><span class="chip">Bank #' + (i + 1) + '</span><h3>' + esc(q.q) + '</h3>' + body + '</div>';
+    });
+    rv.innerHTML = '<h2 class="h2">Teacher review</h2><div class="rv-bar"><span>' + QUIZ.length + ' questions with correct answers and feedback. Students see these shuffled, one at a time.</span><a class="btn" href="#quiz">Back to the quiz</a></div>' + out;
+  }
+
+  var VIEWS = ['guide', 'cards', 'quiz', 'order', 'charts', 'review'];
+  function route() {
+    var v = location.hash.replace('#', ''); if (VIEWS.indexOf(v) < 0) v = 'guide';
+    VIEWS.forEach(function (n) {
+      $('view-' + n).hidden = n !== v;
+      if ($('tab-' + n)) $('tab-' + n).setAttribute('aria-current', n === v ? 'page' : 'false');
+    });
+    if (v !== 'quiz') $('view-quiz').innerHTML = '';
+    if (v === 'quiz') { useEngine('quiz'); renderQuiz(); }
+    if (v === 'order') { renderOrder(); }
+    if (v === 'review') { renderReview(); } else { $('view-review').innerHTML = ''; }
+  }
+  VIEWS.forEach(function (n) { if ($('tab-' + n)) $('tab-' + n).addEventListener('click', function () { location.hash = n; window.scrollTo(0, 0); }); });
+  window.addEventListener('hashchange', route);
+  document.addEventListener('keydown', function (e) {
+    if (location.hash !== '#cards' || C.done) return;
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'TEXTAREA' || tag === 'INPUT') return;
+    if (e.key === 'ArrowRight') { go(1); } else if (e.key === 'ArrowLeft') { go(-1); }
+  });
+
+  /* practice mode for the notes chart */
+  document.querySelectorAll('[data-hideans]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var box = $(b.getAttribute('data-hideans')), on = !box.classList.contains('hideans');
+      box.classList.toggle('hideans', on);
+      box.querySelectorAll('.ans').forEach(function (a) { a.classList.remove('rev'); });
+      b.setAttribute('aria-pressed', String(on));
+      b.textContent = on ? 'Show all answers' : 'Practice mode: hide answers';
+    });
+  });
+  document.addEventListener('click', function (e) { var a = e.target.closest && e.target.closest('.hideans .ans'); if (a) a.classList.add('rev'); });
+  document.addEventListener('keydown', function (e) { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('ans') && e.target.closest('.hideans')) { e.preventDefault(); e.target.classList.add('rev'); } });
+
+  aiStatus();
+  startDeck(CARDS, true);
+  useEngine('quiz'); startQuiz(QUIZ);
+  route();
+
+})();
+</script>
+
+</body></html>
